@@ -2,6 +2,38 @@
 
 This public repository exists to provide a stable, model-neutral evidence source for independent external audit of the Cyber Academy RC5 release package.
 
+## Public audit website and raw sources
+
+- [Open the audit website](https://mir666u.github.io/cyber-academy-rc5-audit/)
+- [Complete package — raw text](https://raw.githubusercontent.com/mir666u/cyber-academy-rc5-audit/main/RC5_v1.2_Independent_Audit_Package_070926.txt)
+- [18 individually accessible original sources](raw/)
+- [Machine-readable evidence manifest](evidence-manifest.json)
+- [SHA-256 checksums](SHA256SUMS)
+
+The website is a navigation layer, not a new audit verdict or adoption decision. Source files in `raw/` are exact byte extractions from the unchanged primary package. They are not rewritten or reconstructed documents. The package remains the primary evidence set, including its full audit protocol.
+
+### Reproduce the integrity check
+
+With Node.js installed, run from this repository's folder:
+
+```sh
+node scripts/verify-evidence.mjs
+```
+
+The verifier checks the package against its fixed 500,851-byte length and SHA-256; parses all 18 source boundaries; verifies each embedded source's byte length and SHA-256; compares each raw file byte-for-byte; and checks both published manifests. Any mismatch stops verification with an error. No files are written in this default verification mode.
+
+All 18 sources were reverified during website preparation on 2026-09-08. This is a file-integrity check, not an independent content audit.
+
+[Immutable baseline package](https://raw.githubusercontent.com/mir666u/cyber-academy-rc5-audit/f45469d68d9e5acf5af81f06730d13e4135ddf08/RC5_v1.2_Independent_Audit_Package_070926.txt)
+
+Evidence is marked `-text` in `.gitattributes` to prevent Git from converting its line endings on Windows. Download raw files when checking hashes; copying rendered browser text may change their bytes.
+
+### Website maintenance
+
+GitHub Pages publishes the static site from the `main` branch, `/` (root) folder. `index.html` and `styles.css` provide the website; `.nojekyll` keeps publication static. No third-party scripts, tracking, external fonts, or build dependencies are used.
+
+Before publishing any later change, run the verifier and inspect the diff. Keep the original package and extracted evidence unchanged. New evidence versions require separate, explicitly identified files and provenance. Website publication does not establish adoption in the Cyber Academy project.
+
 ## Primary audit package
 
 **RC5_v1.2_Independent_Audit_Package_070926.txt**
