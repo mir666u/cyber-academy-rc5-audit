@@ -1,0 +1,112 @@
+CYBER ACADEMY / TIETOTURVALLISUUS
+MASTER SOURCE v1.2 — INSTRUCTION PACKAGE RC4
+LESSON CONTINUITY / CURRICULUM EXECUTION UPDATE
+Päiväys: 2026-08-24
+
+STATUS
+APPROVED / ACTIVE — hyväksytty 2026-08-25.
+Tämä tiedosto täydentää MASTER SOURCE baseline v1.2 RC1:tä, RC2 Continuity / Canonical Content Updatea ja RC3 Portfolio Continuity / Case Preservation Updatea.
+
+Muutosluokka: packaging / QA / continuity / curriculum execution control.
+Rakenteellinen baseline-trigger: EI, ellei myöhemmässä hyväksynnässä todeta että dependency-arkkitehtuuri muuttuu.
+
+HAVAITUT FAILURE MODET
+1. CH3:n kanoninen sisältö rekonstruoitiin alkuperäisen käyttämisen sijasta.
+2. CH4:n aikana AI jatkoi väärästä lesson-kohdasta ja opetti jo käsiteltyä sisältöä uutena.
+3. CURRENT OPERATIONAL STATE jäi chapter-tasolle eikä seurannut lesson-tason etenemistä.
+4. Aktiiviselle luvulle ei ollut etukäteen näkyvää lesson-level execution plania, coverage-karttaa eikä exit gatea.
+5. Pelkkä continuity-sääntö ei estänyt virhettä käytännössä, koska ennen generointia ei ollut pakollista state/manifest-verifiointia.
+
+A. LESSON MANIFEST
+Jokaiselle uudelle MAINLINE-luvulle laaditaan ennen opetusta lesson manifest, joka sisältää:
+- chapter objective;
+- prerequisites;
+- suunnitellut osat ja järjestyksen;
+- jokaisen osan ydintavoitteen;
+- coverage mappingin MASTER SOURCEen;
+- deferred topics;
+- chapter exit criteria;
+- next dependency;
+- mode/delivery-suunnitelman;
+- relevantit comprehension/retention-checkit.
+
+Manifest on prospektiivinen execution plan, ei retroaktiivinen historia. Osamäärä on suunnitelma, ei luonnonlaki. Sitä saa muuttaa vain eksplisiittisellä, perustellulla revisionilla, jonka syy ja vaikutus kirjataan ennen uuden osan opetusta.
+
+B. LEARNING STATE
+Pidä erillinen muuttuva lesson-tason tilarekisteri:
+- MAINLINE;
+- ACTIVE CHAPTER;
+- LAST CANONICAL LESSON;
+- NEXT PLANNED LESSON;
+- CHAPTER PROGRESS;
+- COVERED OBJECTIVES;
+- DEFERRED OBJECTIVES;
+- MODE;
+- VERIFIED SKILL STATE;
+- ACTIVE EXPLORATION BRANCHES;
+- last update + provenance.
+
+LEARNING STATE on etenemisen indeksi, ei kanonisen oppimateriaalin korvike. Alkuperäinen hyväksytty lesson/chapter-sisältö voittaa ristiriidassa.
+
+C. CONTINUITY GATE
+Ennen jokaista uutta MAINLINE-oppituntia:
+1. LOCATE: tunnista viimeinen kanoninen oppitunti alkuperäisestä sisällöstä tai luotettavasta arkistosta.
+2. VERIFY STATE: täsmää Learning State siihen.
+3. MANIFEST CHECK: varmista seuraava suunniteltu osa.
+4. COVERAGE/DUPLICATE CHECK: varmista ettei ydinasiaa opeteta vahingossa uutena eikä prerequisitea ohiteta.
+5. MODE CHECK: varmista Drive/Relaxed/Screen ja toimitustapa.
+6. GENERATION GATE: jos jokin kriittinen kohta ei varmistu, älä generoi jatkoa arvauksella.
+
+D. LESSON COMMIT
+Kun lesson on toimitettu ja käyttäjä hyväksyy etenemisen siitä eteenpäin:
+- päivitä LAST CANONICAL LESSON;
+- päivitä NEXT PLANNED LESSON;
+- päivitä PROGRESS/COVERED;
+- jos lesson korvataan, merkitse vanha SUPERSEDED;
+- älä nosta VERIFIED SKILL STATEa Drive/Relaxed-altistumisen perusteella.
+
+E. CANONICAL LESSON ARCHIVE
+Valmiit ja hyväksytyt luvut tallennetaan mahdollisuuksien mukaan pysyviksi canonical chapter -tiedostoiksi tai tarkalla pointerilla alkuperäiseen sisältöön.
+Yleinen mallin tieto ei ratkaise kysymystä “mitä tässä Academyssa opetettiin jo”.
+
+F. COVERAGE / SCOPE / SPIRAL GUARD
+Pakolliset MASTER SOURCE -aiheet mapataan tilaan COVERED / PLANNED / DEFERRED WITH TARGET / N/A.
+Älä jätä foundation-aihetta chapter-rajojen väliin.
+Älä myöskään laajenna yhtä chapteria loputtomasti: jos aihe ei ole chapter exit criterian kannalta tarpeellinen, siirrä se nimettyyn myöhempään spiral-kierrokseen.
+
+G. CHAPTER EXIT GATE
+Ennen seuraavaan lukuun siirtymistä varmista:
+- objective täyttyy käsitetasolla;
+- pakollinen coverage on käsitelty tai eksplisiittisesti deferred;
+- olennaiset virhetulkinnat on käsitelty;
+- käyttäjä pystyy seuraamaan keskeisen tapahtumaketjun ohjatusti;
+- tarvittava low-stakes comprehension/retention check on tehty.
+Tämä EI ole VERIFIED SKILL STATE -verification gate.
+
+H. MODE / PRACTICE BALANCE
+Drive rakentaa mekanismit ja päättelyn.
+Relaxed voi käyttää kevyitä data-/tilanneharjoituksia.
+Screen tuo CLI:n, lokit, packet capturet, koodin ja labrat.
+Pitkiä foundation-jaksoja ei saa rakentaa niin, että käytännön Screen-sillat siirtyvät määrittelemättömästi myöhemmäksi. Jokaisessa vaiheessa määritä, milloin konsepti siirtyy käytäntöön.
+
+I. CROSS-CUTTING FOUNDATIONS
+Curriculum execution -suunnitelman pitää seurata myös läpileikkaavia tavoitteita, ei vain chapterin pääaihetta:
+- Python/core programming/query foundations voidaan aloittaa Systems/Networking-vaiheiden rinnalla;
+- PowerShell Windowsissa ja Bash Linuxissa oikeassa kontekstissa;
+- AI as Tool + AI Technical Foundations + AI Security mukana alusta;
+- Windows-first / Linux-soon;
+- cloud/hybrid literacy alkaa dependencyjen salliessa;
+- nämä eivät saa kadota siksi, että yksi foundation-vaihe pitenee.
+
+J. PROSPECTIVE PLAN ≠ HISTORY
+Jos aiemmalla luvulla ei ollut manifestia:
+- varmennettu historia merkitään VERIFIED HISTORY;
+- epävarmaa historiaa ei rekonstruoida;
+- uusi loppu-/jatkosuunnitelma merkitään PROSPECTIVE PLAN;
+- käyttäjän hyväksyntä tekee prospektiivisesta suunnitelmasta aktiivisen execution planin, ei “alkuperäistä historiaa”.
+
+K. CURRICULUM ASSURANCE
+Täydellinen end-to-end curriculum-audit tehdään vaiheittain ennen kutakin uutta MASTER MAP -vaihetta. Älä väitä koko Cyber Academyn lesson-tason suunnitelmaa valmiiksi, jos vain nykyinen Networking-vaihe on manifestoitu.
+
+RELEASE GATE
+RC4 on aktiivinen tämän hyväksytyn version ollessa tallennettuna projektin lähteisiin.

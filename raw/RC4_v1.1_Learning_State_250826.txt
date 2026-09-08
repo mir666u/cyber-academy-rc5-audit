@@ -1,0 +1,53 @@
+CYBER ACADEMY — LEARNING STATE
+VERSION 1.1
+Päiväys: 2026-08-24
+
+STATUS
+APPROVED / ACTIVE MUTABLE LESSON-LEVEL STATE — hyväksytty 2026-08-25.
+
+MAINLINE
+Cyber Foundations
+
+ACTIVE CHAPTER
+CH04 — TCP, UDP ja portit
+
+MODE
+Drive Mode
+
+LAST CANONICAL LESSON
+CH04-P17 — viimeisin käyttäjän vahvistama oppitunti.
+
+NEXT PLANNED LESSON
+CH04-P18 — Socket: portti vs käyttöjärjestelmän verkkopäätepiste.
+Status: ACTIVE / CH04 Completion Manifest v1.1.
+
+PROGRESS
+17 completed.
+Planned total = 20 hyväksytyn CH04 Completion Manifest v1.1:n mukaan.
+
+COVERED — HIGH CONFIDENCE
+- IP vs portin eri rooli;
+- TCP reliability basics;
+- sequence numbers;
+- ACK;
+- retransmission;
+- three-way handshake;
+- UDP basic model;
+- source/destination ports;
+- listening;
+- open/closed/filtered;
+- parallel connection identification basics;
+- FIN/ACK and RST basics;
+- TCP lifecycle;
+- failure-stage troubleshooting;
+- connection attempt ≠ established connection ≠ application success.
+
+HISTORY LIMITATION
+P1–P7:n tarkkoja kanonisia otsikoita/sanamuotoja ei backfillata ilman alkuperäistä sisältöä.
+
+VERIFIED SKILL STATE
+Ei muutosta. Drive Mode ei ole skill verification.
+
+ACTIVE EXPLORATION BRANCHES
+- iOS / mobile-device Real-World Investigation
+- Pixel / GrapheneOS Security Lab

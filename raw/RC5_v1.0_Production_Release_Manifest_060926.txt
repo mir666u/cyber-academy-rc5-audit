@@ -1,0 +1,44 @@
+CYBER ACADEMY — RC5 PRODUCTION RELEASE MANIFEST
+VERSION 1.0
+Päiväys: 2026-09-06
+
+RELEASE STATUS
+TECHNICAL QA PASS / PROJECT UI ADOPTION PENDING.
+
+ACTIVE CORE TARGET — EXACTLY THREE FILES
+1. RC5_v1.5_Effective_Master_Source_060926.txt
+   SHA-256: 977f4c2abf99e3c8307e077cdc46a25dac4e589748a611b0fe851912c882ade7
+2. RC5_v1.3_Academy_State_Continuity_060926.txt
+   SHA-256: 2213bd07c3ecb9961110857ecf5fe99f898bb59b556a0bdfcf74534153f7bbcd
+3. RC5_v1.2_Canonical_Learning_Content_060926.txt
+   SHA-256: efd8d9928d9b20906cd072f6a161848fee0eed4e104355d0d5c4a73ac026e99c
+
+INSTRUCTIONS FIELD — NOT A PROJECT SOURCE
+RC5_v1.9_Project_Instructions_060926.txt
+SHA-256: ce59b6d41d2f3066a2964ed1c997880ec58c8a8888af770ab698a04391ba2d36
+
+MAINTENANCE / AUDIT — NOT PROJECT SOURCES
+OPS_v1.2_Cyber_Academy_Maintenance_Register_060926.txt
+SHA-256: b08ea1ad13c18142186198ee83eecc9f2fb5cc884bbe4dc3355e8fa21e3a1156
+
+RC5_v1.2_Critical_Risk_and_Migration_QA_060926.txt
+SHA-256: fb39be5823c0f58deb9e1561a3a7b9e129e81f5b329c87858fdd272c574c0383
+
+DO NOT INSTALL AS A FOURTH CORE SOURCE
+RC5_v1.2_Curriculum_Execution_and_Variation_030926.txt
+Its valid content has been integrated into Academy State & Continuity v1.3.
+
+CURRENT CONTINUITY LOCK
+- CH05-P1 COMPLETE.
+- CH05-P2 COMPLETE.
+- CH05-P3 DELIVERED / CURRENT / NOT YET ACCEPTED COMPLETE.
+- NEXT PROSPECTIVE: CH05-P4 only after P3 acceptance.
+- CH05 uses the delivered six-part manifest.
+- CH04-P20 primary lesson/acceptance evidence remains unrecovered and explicit.
+
+SAFETY LOCK
+Do not remove existing Project Sources until the three new core files and the
+Instructions replacement have been installed, read back and runtime-tested.
+No destructive Project UI action is authorized by this manifest.
+
+END OF MANIFEST

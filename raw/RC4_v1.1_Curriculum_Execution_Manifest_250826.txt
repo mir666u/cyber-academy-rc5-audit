@@ -1,0 +1,73 @@
+CYBER ACADEMY — CURRICULUM EXECUTION MANIFEST
+VERSION 1.1
+Päiväys: 2026-08-24
+
+STATUS
+APPROVED / ACTIVE NETWORKING-PHASE PLAN — hyväksytty 2026-08-25.
+EI koko Cyber Academyn valmis lesson-tason opetussuunnitelma.
+
+PURPOSE
+Mapata nykyisen Networking-foundationin pakolliset MASTER SOURCE -aiheet hallituksi chapter-tason suunnitelmaksi sekä estää sekä coverage-aukot että yhden luvun hallitsematon paisuminen.
+
+CURRENT
+CH1–CH3 valmis.
+CH4 aktiivinen; viimeisin vahvistettu lesson P17.
+CH4:n loppu P18–P20 on erillisessä candidate completion manifestissa.
+
+PROPOSED NETWORKING CHAPTERS AFTER CH04
+
+CH05 — Verkkoasetukset käytännössä
+Core: DHCP, private/public IP, NAT/PAT, gateway revisit, IPv6-orientaatio.
+Exit: oppija ymmärtää miten päätelaite saa verkkoasetukset ja mitä NAT tekee/ei tee.
+
+CH06 — Reachability ja verkkovianrajaus
+Core: ICMP, ping, TTL/hop-limit, traceroute/tracert, DNS vs routing vs service failure.
+Exit: oppija pystyy rajaamaan vikaa mekanismiketjun avulla ja ymmärtää työkalujen päätelmärajat.
+
+CH07 — HTTP ja client–server request/response
+Core: client/server, request/response, method/path/status/headers/body käsitetasolla.
+Tämä toimii Networking → Applications/Web/API -siltana.
+
+CH08 — TLS / HTTPS
+Core: confidentiality, integrity, authentication, certificate/trust chain käsitetasolla.
+Ei syvää kryptomatematiikkaa.
+
+CH09 — Firewall, proxy ja VPN
+Core: allow/deny/state, proxy välittäjänä, VPN tunnelina/trust shiftinä, inbound/outbound boundaries.
+Privacy ≠ anonymity ≠ device integrity.
+
+CH10 — Packet capture -silta käytäntöön
+Core: capture point, headers vs payload, encrypted vs visible metadata, Wireshark-käsitemalli.
+Mode: Drive concept-first → Screen practical bridge.
+
+NETWORKING COVERAGE MAP
+Ethernet — COVERED CH3; spiral CH10.
+MAC — COVERED CH3.
+ARP — COVERED CH3; IPv6 neighbor concepts deferred.
+IP — COVERED CH3; revisit CH5/CH6.
+Subnetting — BASIC COVERED CH3; calculation depth deferred.
+Routing — COVERED CH3; spiral CH6.
+Gateway — COVERED CH3; revisit CH5.
+NAT — PLANNED CH5.
+DNS — BASIC COVERED CH3; spiral CH6 and later application/security contexts.
+DHCP — PLANNED CH5.
+TCP — COVERED/ACTIVE CH4.
+UDP — COVERED/ACTIVE CH4.
+Ports — COVERED/ACTIVE CH4.
+Sockets — PROPOSED CH4 P18/P19.
+HTTP — PROPOSED CH7.
+TLS — PROPOSED CH8.
+VPN — PROPOSED CH9.
+Firewall — BASIC exposure CH4; systematic coverage PROPOSED CH9.
+Proxy — PROPOSED CH9.
+Packet capture — PROPOSED CH10.
+
+CROSS-CUTTING CONTROLS
+- Ennen jokaista uutta chapteria laaditaan lesson manifest ja exit criteria.
+- Screen-practical bridges määritetään etukäteen; niitä ei lykätä määräämättömästi.
+- Python/core programming/query foundations, PowerShell/Bash, AI-foundations ja Windows/Linux-vertailu seurataan erillisessä cross-cutting coverage mapissa, jotta pitkä Networking-jakso ei syrjäytä niitä.
+- Ennen siirtymistä Applications/Web/API-vaiheeseen tehdään Networking coverage audit.
+- Täydellinen seuraavien MASTER MAP -vaiheiden lesson-level suunnittelu tehdään vaiheittain, ei väitetä valmiiksi nyt.
+
+NOTE
+CH05–CH10-järjestys on tämänhetkinen pedagoginen ehdotus, ei aiemmin lukittu canon. Sitä voidaan muuttaa ennen kyseisen chapterin alkua, jos dependency-/learning-evidence antaa paremman perusteen.

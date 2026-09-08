@@ -1,0 +1,180 @@
+CYBER ACADEMY — RC5 CRITICAL RISK AND MIGRATION QA
+VERSION 1.2
+Päiväys: 2026-09-06
+
+STATUS
+TECHNICAL QA PASS FOR THE 2026-09-06 PRODUCTION RELEASE.
+PROJECT UI ADOPTION: NOT YET EXECUTED / NOT YET RUNTIME-VERIFIED.
+
+OVERALL DECISION
+The earlier 2026-09-02 RC5 candidate MUST NOT be installed unchanged.
+The corrected 2026-09-06 three-source production release is approved for a
+staged, non-destructive installation and runtime verification. Old sources
+must remain in place until the new set and Instructions field pass the checks
+in this report. No destructive cleanup is approved by this report.
+
+======================================================================
+1. AUDIT SCOPE AND EVIDENCE
+======================================================================
+
+READ-ONLY PROJECT UI OBSERVATION
+- Project: “⚡️⚡️Cyber Academy / Tietoturvallisuus”.
+- Current Project Sources count observed: 20.
+- Current Instructions field: PROJECT INSTRUCTIONS v1.2 RC4.
+- Current memory setting: Default memory.
+- Library access: Enabled.
+- No RC5 production file was installed, removed or edited during the audit.
+
+PRIMARY STUDY-CONTINUITY EVIDENCE
+- CH05-P1 exact lesson turn exists in the project study conversation.
+- The following user message is “jatka”; therefore P1 is accepted complete.
+- CH05-P2 exact lesson turn exists.
+- The following user message is “jatka”; therefore P2 is accepted complete.
+- CH05-P3 exact lesson turn exists.
+- No later user acceptance/proceed message follows P3; therefore P3 remains
+  DELIVERED / CURRENT / NOT YET ACCEPTED COMPLETE.
+- The opening of P1 states the delivered six-part CH05 manifest:
+  P1 network settings/DHCP; P2 private/public IP; P3 NAT/PAT; P4 router roles;
+  P5 IPv6 orientation; P6 synthesis/exit gate.
+
+P20 EVIDENCE BOUNDARY
+- A later state/QA checkpoint asserts CH04-P20 and CH04 complete.
+- The inspected project branch and supplied shared snapshots do not contain
+  the exact P20 lesson, the user's P20 acceptance or a verbatim continuity
+  commit.
+- Therefore P20 completion is retained only as an explicitly qualified later
+  assertion. It is not promoted to primary-evidence-verified canon.
+- This archival gap does not erase the primary-evidence-confirmed CH05 work or
+  force the learner backwards.
+
+======================================================================
+2. CRITICAL FINDINGS AND CONTROLS
+======================================================================
+
+F-01 — CRITICAL — STALE PROGRESS
+Earlier candidate: CH05-P1 current/not complete.
+Observed truth: P1 and P2 complete; P3 delivered/current/not accepted.
+Control: State v1.3, Canonical Content v1.2, Instructions v1.9 and Operations
+Register v1.2 now use the primary-evidence boundary.
+
+F-02 — CRITICAL — COMPETING CH05 MANIFESTS
+Earlier State/Roadmap: ten-part CH05 draft.
+Delivered canon: six-part CH05 manifest.
+Risk: duplicate DHCP/private-IP/NAT lessons and drift.
+Control: six-part delivered manifest locked; ten-part draft marked superseded.
+
+F-03 — HIGH — FOURTH CORE SOURCE / DUPLICATE PLAN OWNER
+Risk: installing Curriculum Execution and Variation as a fourth source would
+contradict the three-owner architecture and duplicate mutable plan/state.
+Control: valid roadmap/variation content is integrated into Academy State &
+Continuity. The separate roadmap is not an active Project Source.
+
+F-04 — HIGH — P1–P3 CANONICAL CONTENT GAP
+Risk: future continuation depends on conversation recall or reconstruction.
+Control: exact P1–P3 assistant lesson turns recovered into Canonical Learning
+Content v1.2. Their extracted hashes exactly match the source-turn hashes.
+
+F-05 — HIGH — UNVERIFIED P20 CLAIM
+Risk: an administrative assertion is presented as recovered primary evidence.
+Control: explicit evidence qualifier in State, Canonical Content and Operations;
+no reconstruction and no forced rollback.
+
+F-06 — HIGH — SELF-DISQUALIFYING CANDIDATE STATUS
+Risk: installed sources continue to call themselves inactive candidates.
+Control: production files are authoritative only when installed as the exact
+verified target set; Instructions becomes active when saved and verified.
+
+F-07 — HIGH — MULTIPLE ACTIVE OWNERS
+Current UI contains old Master, State, manifest, register and Instructions-file
+sources plus individual chat-derived sources.
+Risk: retrieval can select stale state or behavior.
+Control: staged installation first; after runtime verification, remove all old
+competing sources from active retrieval while preserving rollback copies and
+the original project conversations.
+
+F-08 — MEDIUM — INSTRUCTIONS CAPACITY/LOSS
+Instructions v1.9 length: 7,259 characters / 7,584 bytes.
+Control: complete replacement remains compact; after save, read the field back
+and verify beginning, ending and critical progress-evidence rule before cleanup.
+
+F-09 — MEDIUM — LIVE COMMIT DEPENDENCY
+Risk: a missing lesson-level commit could cause the static snapshot to lag.
+Control: user acceptance evidence plus full State checkpoints remain fallback;
+future accepted lessons receive visible LIVE CONTINUITY COMMITs. Never claim
+automatic source synchronization.
+
+======================================================================
+3. APPROVED PRODUCTION TARGET
+======================================================================
+
+EXACTLY THREE ACTIVE CORE PROJECT SOURCES
+1. RC5_v1.5_Effective_Master_Source_060926.txt
+2. RC5_v1.3_Academy_State_Continuity_060926.txt
+3. RC5_v1.2_Canonical_Learning_Content_060926.txt
+
+PROJECT INSTRUCTIONS FIELD
+RC5_v1.9_Project_Instructions_060926.txt
+
+MAINTENANCE-ONLY ARTIFACTS — NOT PROJECT SOURCES
+- OPS_v1.2_Cyber_Academy_Maintenance_Register_060926.txt
+- this QA report;
+- earlier QA reports;
+- separate Curriculum Execution and Variation candidate.
+
+BRANCH MATERIAL
+iOS and Pixel/GrapheneOS references remain preserved outside the active core
+and are loaded only for their named Exploration Branch.
+
+======================================================================
+4. CONTROLLED ADOPTION SEQUENCE
+======================================================================
+
+1. Keep all existing sources unchanged.
+2. Add the exact three production core files.
+3. Replace the entire Instructions field with v1.9.
+4. Read back the visible source list and Instructions field.
+5. Run a fresh-project-chat continuity test. Expected answers:
+   - last primary-evidence-completed lesson = CH05-P2;
+   - current lesson = CH05-P3, delivered/not accepted complete;
+   - next prospective lesson = CH05-P4 only after P3 acceptance;
+   - CH05 manifest = six parts, not ten;
+   - P20 = later completion assertion with unrecovered primary evidence;
+   - maintenance belongs in the maintenance thread;
+   - active core target = exactly three sources;
+   - curriculum roadmap is integrated into State, not a fourth core source.
+6. If any answer fails, stop and keep the old sources. Correct the new set.
+7. Only after all tests pass, remove old competing Project Sources from active
+   retrieval. Preserve Library/rollback copies and project conversations.
+8. Verify again after cleanup.
+
+======================================================================
+5. INTEGRITY RESULTS
+======================================================================
+
+EXACT RECOVERED LESSON HASHES (SHA-256)
+- CH05-P1: eef4df36136f2d1cd443398f69d961f2c847a4f9721bad569e419deeca73e684
+- CH05-P2: 252c6807b78b9fc15aa9ae55ae34d0fd2d835c519632af69bf16d10d1e9709bf
+- CH05-P3: 9efbaea4ff9dfb1e4fe467e3fdb17b3ea006855603ec723e9da2a64105a9a5b3
+
+PRODUCTION FILE HASHES (SHA-256)
+- Effective Master v1.5: 977f4c2abf99e3c8307e077cdc46a25dac4e589748a611b0fe851912c882ade7
+- Academy State & Continuity v1.3: 2213bd07c3ecb9961110857ecf5fe99f898bb59b556a0bdfcf74534153f7bbcd
+- Canonical Learning Content v1.2: efd8d9928d9b20906cd072f6a161848fee0eed4e104355d0d5c4a73ac026e99c
+- Project Instructions v1.9: ce59b6d41d2f3066a2964ed1c997880ec58c8a8888af770ab698a04391ba2d36
+- Operations Register v1.2: b08ea1ad13c18142186198ee83eecc9f2fb5cc884bbe4dc3355e8fa21e3a1156
+
+NOTE
+The Operations Register hash above was calculated before this QA report was
+added but after its 2026-09-06 content correction. Any later intentional edit
+requires a new package manifest/hash set.
+
+======================================================================
+6. FINAL QA VERDICT
+======================================================================
+
+2026-09-02 CANDIDATE: FAIL / DO NOT INSTALL UNCHANGED.
+2026-09-06 PRODUCTION FILE SET: TECHNICAL PASS FOR STAGED ADOPTION.
+DESTRUCTIVE CLEANUP: BLOCKED UNTIL RUNTIME VERIFICATION AND EXPLICIT ACTION.
+OPEN NON-BLOCKING ARCHIVAL GAP: CH04-P20 PRIMARY TEXT/ACCEPTANCE EVIDENCE.
+
+END OF REPORT

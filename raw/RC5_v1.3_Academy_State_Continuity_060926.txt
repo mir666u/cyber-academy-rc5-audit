@@ -1,0 +1,972 @@
+CYBER ACADEMY — ACADEMY STATE & CONTINUITY
+PRODUCTION RELEASE RC5
+VERSION 1.3
+Päiväys: 2026-09-06
+
+STATUS
+APPROVED PRODUCTION RELEASE — CURRENT CHECKPOINT OWNER WHEN INSTALLED IN THE VERIFIED THREE-SOURCE TARGET SET.
+
+ROLE
+This is the single checkpoint owner for:
+- MAINLINE progress and current lesson;
+- active phase/chapter and prospective chapter plan;
+- coverage and named deferrals;
+- canonical-content provenance and recovery gaps;
+- active/parked exploration branches;
+- portfolio-candidate state;
+- maintenance/release state.
+
+Between file checkpoints, the newest verified LIVE CONTINUITY COMMIT in the study conversation owns newer lesson-level progress. A live commit may update progress but cannot silently change curriculum architecture or canonical lesson text.
+
+This file is NOT:
+- the curriculum baseline;
+- the complete canonical lesson archive;
+- evidence that exposure equals competence;
+- a substitute for original evidence in an investigation.
+
+======================================================================
+1. CURRENT MAINLINE SNAPSHOT
+======================================================================
+
+MAINLINE
+Cyber Foundations
+
+ACTIVE PHASE
+Networking foundations
+
+ACTIVE CHAPTER
+CH05 — Verkkoasetukset käytännössä
+
+MODE
+Drive Mode
+
+LAST PRIMARY-EVIDENCE-CONFIRMED COMPLETED BOUNDARY
+CH05-P2 — Yksityinen I P ja julkinen I P.
+
+CURRENT MAINLINE LESSON
+CH05-P3 — Miten monta laitetta voi käyttää yhtä julkista I P -osoitetta? (NAT/PAT)
+
+CURRENT LESSON STATUS
+- Exact lesson text was delivered in the project study conversation.
+- NOT YET ACCEPTED / NOT YET COMMITTED COMPLETE.
+- Do not start CH05-P4 until the user accepts or asks to proceed after P3 and the LIVE CONTINUITY COMMIT is written.
+
+NEXT PROSPECTIVE LESSON
+CH05-P4 — Mitä kotireititin oikeastaan tekee?
+Status: PROSPECTIVE ONLY until P3 acceptance/continuity commit.
+
+CH04 ADMINISTRATIVE VERIFICATION NOTE
+- A later checkpoint asserted CH04-P20 complete and CH04 closed.
+- The available primary conversation history and shared snapshots do not contain the exact P20 lesson, the user's acceptance message or a verbatim continuity commit.
+- This is an evidence gap, not a command to send the learner backwards. CH05 has already begun and P1–P2 have primary conversation evidence.
+- Do not claim P20's exact text or acceptance has been verified until the original record is recovered.
+
+VERIFIED SKILL STATE
+NO CHANGE established by CH04 completion or current CH05 exposure.
+Drive Mode theory completion is not hands-on skill proof.
+
+THREAD ROUTING LOCK
+- Study thread: lessons, learning interaction, exercises, comprehension checks and skill verification.
+- Cyber Academy maintenance thread: sources, canonical recovery, state, instructions, settings, versions, QA, tooling and environment development.
+- Maintenance work must not be moved into the study thread unless required to keep the immediate lesson correct or safe.
+
+======================================================================
+2. CONTENT AVAILABILITY ≠ LEARNING PROGRESS ≠ SKILL VERIFICATION
+======================================================================
+
+A. CONTENT AVAILABILITY
+Does exact original/recovered lesson text exist, and where?
+
+B. LEARNING PROGRESS
+Was the lesson actually delivered/studied and accepted as the progress boundary?
+
+C. VERIFIED SKILL STATE
+Has the learner demonstrated the skill through an appropriate verification gate?
+
+Never infer B from A.
+Never infer C from A or B.
+
+CURRENT STATUS MAP
+
+CH01–CH03
+- Content: RECOVERED ORIGINAL TEXT.
+- Progress: COMPLETE according to accepted course history.
+- Skill verification: no automatic promotion.
+
+CH04-P01–P18
+- Content: RECOVERED CANONICAL TEXT.
+- Progress: COMPLETE.
+- Skill verification: no automatic promotion.
+
+CH04-P19
+- Content: EXACT RECOVERED CANONICAL TEXT.
+- Progress: COMPLETE according to the newer study continuity record.
+- Skill verification: no automatic promotion.
+
+CH04-P20
+- Content: EXACT FULL TEXT NOT RECOVERED.
+- Progress: LATER CHECKPOINT ASSERTION EXISTS; PRIMARY ACCEPTANCE EVIDENCE NOT RECOVERED.
+- Chapter transition: CH05 has already begun; do not force a backward lesson jump solely because of this archival gap.
+- Skill verification: no automatic promotion.
+
+CH05-P1
+- Content: EXACT TEXT RECOVERED INTO RC5_v1.2_Canonical_Learning_Content_060926.txt.
+- Progress: COMPLETE; user proceeded with “jatka”.
+- Skill verification: no change.
+
+CH05-P2
+- Content: EXACT TEXT RECOVERED INTO RC5_v1.2_Canonical_Learning_Content_060926.txt.
+- Progress: COMPLETE; user proceeded with “jatka”.
+- Skill verification: no change.
+
+CH05-P3
+- Content: EXACT TEXT RECOVERED INTO RC5_v1.2_Canonical_Learning_Content_060926.txt.
+- Progress: DELIVERED / CURRENT / NOT YET ACCEPTED COMPLETE.
+- Skill verification: no change.
+
+SECURITY INTERLUDE 01–03
+- Content: RECOVERED.
+- Role: supplemental branch material; it does not independently move MAINLINE.
+- SI01 question-quality amendment remains active: wrong options must be plausible misconceptions, not trivial distractors.
+
+CANONICAL CONTENT OWNER
+RC5_v1.2_Canonical_Learning_Content_060926.txt
+
+CURRENT CONTENT-RECOVERY GAP
+- exact CH04-P20 lesson text and its primary acceptance/commit evidence.
+
+Canonical pointer for the remaining gap:
+Cyber Academy project study conversation titled “👩🏼‍💻 C Y B E R _ A C A D E M Y 👩🏼‍🎓 Kurssimateriaali” and the linked shared snapshots inspected on 2026-09-06.
+
+The gaps do not erase separately verified progress. They block any claim that the missing exact text has already been archived.
+
+======================================================================
+3. CH04 COMPLETION RECORD
+======================================================================
+
+CH04 — TCP, UDP ja portit
+Status: TRANSITIONED TO CH05; a later checkpoint marks COMPLETE at Drive Mode teaching/comprehension level, while CH04-P20 primary acceptance evidence remains unrecovered.
+
+COVERED
+- port mental model and source/destination port roles;
+- TCP reliability, ordering, acknowledgements and retransmission;
+- TCP connection establishment and failure;
+- UDP without TCP-style connection establishment;
+- connection lifecycle and termination;
+- open, closed and filtered observations;
+- multiple simultaneous connections;
+- socket as an OS network endpoint;
+- demultiplexing to the correct socket/process;
+- chapter synthesis and comprehension/exit check.
+
+NAMED LATER SPIRAL / SCREEN TOPICS
+- TCP flow and congestion control;
+- SACK, MSS and advanced TCP options;
+- complete TCP state machine;
+- QUIC;
+- deep port-scanning technique;
+- socket API programming;
+- hands-on packet capture and tooling.
+
+CH04 completion does not raise VERIFIED SKILL STATE.
+
+======================================================================
+4. CH05 PROSPECTIVE LESSON MANIFEST
+======================================================================
+
+CHAPTER
+CH05 — Verkkoasetukset käytännössä
+
+CHAPTER OBJECTIVE
+The learner can explain at concept level how a device obtains the settings needed for network communication; distinguish private and public addressing; explain the basic role and limits of DHCP, default gateway, NAT and PAT; and recognize how IPv6 changes the addressing mental model without treating NAT as a security guarantee.
+
+PREREQUISITES
+- CH03: IP, subnet/prefix, local/remote decision, gateway and routing mental model.
+- CH04: transport endpoints, TCP/UDP, ports, sockets and connection interpretation.
+
+LOCKED DELIVERED MANIFEST
+P1 — Mistä kone saa verkkoasetuksensa? DHCP, needed settings, failure-chain and security/DFIR relevance. COMPLETE; exact text recovered.
+P2 — Yksityinen I P ja julkinen I P. COMPLETE; exact text recovered.
+P3 — Miten monta laitetta voi käyttää yhtä julkista I P -osoitetta? NAT/PAT, translation state, attribution limits and NAT ≠ firewall. DELIVERED / CURRENT / NOT YET ACCEPTED COMPLETE; exact text recovered.
+P4 — Mitä kotireititin oikeastaan tekee? PROSPECTIVE.
+P5 — IPv6 kevyt orientaatio. PROSPECTIVE.
+P6 — Synteesi ja exit gate. PROSPECTIVE.
+
+This six-part structure was stated in the opening of the delivered P1 lesson and is therefore the active chapter manifest. The earlier ten-part prospective draft is superseded and must not be used to insert duplicate DHCP/private-IP/NAT lessons.
+
+COVERAGE TARGETS
+- DHCP and settings by function: address/prefix, gateway and DNS — COVERED P1 at orientation/concept level.
+- private/public addressing and interpretation limits — COVERED P2.
+- NAT/PAT mechanism, state, attribution limits and NAT ≠ firewall — COVERED P3; acceptance pending.
+- integrated router roles and mechanism boundaries — PLANNED P4.
+- IPv6 orientation; do not assume IPv4 NAT as the universal model — PLANNED P5.
+- synthesis, misconceptions and low-stakes exit check — PLANNED P6.
+- deeper DHCP allocation/lease/failure mechanics remain a named later spiral unless required to meet the chapter objective.
+
+DEFERRED WITH TARGET
+- DHCP packet-level capture and option-level analysis → later Screen Mode networking lab.
+- DHCP spoofing/rogue server practical detection → later Attack & Defense / network-monitoring spiral.
+- IPv6 SLAAC, Neighbor Discovery, Router Advertisement and DHCPv6 detail → later IPv6 chapter/spiral.
+- NAT traversal and carrier-grade NAT detail → later applied networking spiral.
+
+CH05 EXIT CRITERIA
+Before CH06, the learner can:
+1. distinguish what a host needs for local IP communication, remote-network communication and name resolution;
+2. explain DHCP's role in providing network settings and recognize that Wi-Fi association alone does not prove working internet connectivity;
+3. distinguish private and public addresses without treating either as identity or trust proof;
+4. explain NAT and PAT without calling them encryption, anonymity or a firewall;
+5. connect gateway selection to the local/remote decision learned in CH03;
+6. recognize that IPv6 does not depend on the same NAT assumption as typical IPv4 home networks;
+7. complete the planned low-stakes comprehension/retention check.
+
+This manifest is prospective. It may be revised before an undelivered part when evidence or dependencies require it. It must never be rewritten as if it were the original history of already delivered parts.
+
+======================================================================
+5. DUAL-SPEED CONTINUITY AND ATOMIC COMMIT
+======================================================================
+
+BEFORE A MAINLINE LESSON
+1. Retrieve the newest verified LIVE CONTINUITY COMMIT from the study conversation/project context.
+2. Compare it with this checkpoint snapshot.
+3. Locate the exact prior lesson text or its persistent pointer.
+4. Confirm the next prospective lesson and objective.
+5. Run coverage, duplicate, prerequisite and mode checks.
+6. If a critical item conflicts, do not generate a lesson by guesswork; recover the source first.
+
+AFTER THE USER ACCEPTS OR PROCEEDS FROM A LESSON
+AI writes a visible LIVE CONTINUITY COMMIT in the study conversation containing:
+- timestamp/date;
+- lesson ID and completion status;
+- last confirmed completed boundary;
+- current/next lesson;
+- mode;
+- coverage change;
+- VERIFIED SKILL STATE change or NO CHANGE;
+- canonical text location or persistent pointer;
+- source/provenance note.
+
+The user is not required to copy this commit into the maintenance thread.
+
+STATE FILE CHECKPOINTS
+Publish a complete replacement State & Continuity file at least when:
+- a chapter closes;
+- a new chapter manifest is locked;
+- a phase changes;
+- a branch activates or closes;
+- canonical provenance or a material conflict is corrected;
+- a maintenance/release checkpoint is prepared.
+
+A static Project Source replacement is not required after every lesson. Never claim automatic Project Source synchronization unless it has been technically verified.
+
+======================================================================
+6. EXPLORATION / INVESTIGATION BRANCHES
+======================================================================
+
+IOS-DFIR-01
+Status: OPEN / INCOMPLETE / PARKED.
+28.8 investigation remaining coverage: microphone/camera; Find My/BLE identities; Voice Control trigger chain; Proton/DNS timeline; persistence/security; final incident/control assessment; final limitations/assurance statement.
+Blocker when resumed: original 28.8 sysdiagnose matching the recorded hash or a verified runner evidence package.
+Do not request it outside explicit branch activation.
+
+IOS-DFIR-RUNNER-01
+Status: OPEN / DEVELOPMENT COMPLETION UNVERIFIED / PARKED.
+Known: v0.3 parser QA pass and v0.2 immutability pass were reported.
+Unknown: v0.3 runtime completion, final ZIP and PACKAGE_VERIFICATION.
+Next gate when resumed: inspect existing output before redesign or patching.
+
+PIXEL-GRAPHENEOS-01
+Status: PARKED REFERENCE BRANCH.
+Activate only on an explicit Pixel/GrapheneOS request.
+
+======================================================================
+7. PORTFOLIO STATE
+======================================================================
+
+CA-PF-001 — iOS/iPhone DFIR real-world investigation
+Status: ACTIVE CANDIDATE / NOT PORTFOLIO READY / NOT INDEPENDENT SKILL PROOF.
+Gate: complete and validate the technical investigation.
+
+CA-PF-002 — Cyber Academy iOS DFIR Runner
+Status: ACTIVE CANDIDATE / DESIGN-DEVELOPMENT / NOT PORTFOLIO READY / NOT INDEPENDENT SKILL PROOF.
+Gate: verified runner/control plane, incident/control test, QA, failure handling and reproducible documentation.
+
+Portfolio state does not alter MAINLINE or VERIFIED SKILL STATE.
+
+======================================================================
+APPENDIX A — PROSPECTIVE CURRICULUM, VARIATION AND PARALLEL LEARNING PLAN
+Integrated from RC5_v1.2_Curriculum_Execution_and_Variation_030926.txt after
+removing its stale state block and reconciling CH05 with delivered canon.
+This appendix belongs to this file because ACADEMY STATE & CONTINUITY is the
+single owner of prospective chapter planning. It is not a fourth core source.
+======================================================================
+
+2. OPETUSSUUNNITELMAN RAKENNEMALLI
+======================================================================
+
+Cyber Academy käyttää kolmea samanaikaista mutta erillistä rataa:
+
+A. MAINLINE
+Riippuvuuksiin perustuva varsinainen tekninen opintopolku. MAINLINE määrittää
+virallisen etenemän ja seuraavan oppitunnin.
+
+B. PARALLEL LEARNING
+Vaihtelua ja laajempaa alan ymmärrystä tuovat kuuntelu-, ura-, ilmiö- ja
+AI-aiheet. Ne eivät itsenäisesti siirrä MAINLINE-tilaa.
+
+C. PRACTICAL STUDIO
+Ohjatut Screen Mode -harjoitukset, joissa käyttäjä tekee itse. Ne rakentavat
+käytännön kyvykkyyttä ja voivat myöhemmin tuottaa varmennettavaa näyttöä.
+
+Kaikki kolme rataa voivat tukea toisiaan, mutta niiden tiloja ei yhdistetä.
+
+======================================================================
+3. VAIHTELU- JA ANTI-DRIFT-SÄÄNNÖT
+======================================================================
+
+1. MAINLINE säilyy oletuspolkuna. Sivuosio ei muuta seuraavaa MAINLINE-tuntia.
+
+2. Kun samantyyppisiä raskaita mekanismitunteja on ollut useita peräkkäin,
+   opettaja tarjoaa yhden kevyemmän kuunteluaiheen ja yhden tekemällä opittavan
+   vaihtoehdon. Käyttäjän ei tarvitse valita kumpaakaan.
+
+3. Yhteen opiskelukertaan ei avata montaa uutta teknistä kokonaisuutta.
+   ACTIVE LEARNING QUEUE pidetään pienenä.
+
+4. Vaihtelu ei tarkoita sattumanvaraista hyppelyä. Jokaisella sivutunnilla on
+   vähintään yksi yhteys:
+   - nykyiseen tekniseen aiheeseen;
+   - käyttäjän kiinnostuksenkohteeseen;
+   - tulevan vaiheen orientaatioon;
+   - tai ammatillisen kokonaiskuvan rakentamiseen.
+
+5. AI-aihe tarjotaan vähintään yhtenä vaihtoehtona jokaisen laajemman chapterin
+   aikana tai chapterien välisessä siirtymässä. Se ei ole pakollinen rytmi eikä
+   estä käyttäjää pyytämästä AI-tuntia milloin tahansa.
+
+6. Sama formaatti ei saa hallita liian pitkään. Opetuksessa vuorotellaan:
+   - mekanismiselitys;
+   - tapahtumaketju;
+   - tapauskertomus;
+   - realistinen päättelytehtävä;
+   - työkaludemo;
+   - käyttäjän oma toteutus;
+   - vertailu;
+   - pieni tutkimustehtävä.
+
+7. Kertaaminen toteutetaan spiral learning -mallilla uudessa kontekstissa.
+   Samoja määritelmiä ei toisteta vain täytteen vuoksi.
+
+8. Jos sivupolku kasvaa yli yhden tai muutaman oppitunnin, sille luodaan oma
+   branch-tunnus, tavoite, rajaus ja paluupiste MAINLINEen.
+
+======================================================================
+4. LÄHITULEVAISUUS — NETWORKING FOUNDATIONS
+======================================================================
+
+CH05 — VERKKOASETUKSET KÄYTÄNNÖSSÄ
+Tila: ACTIVE; P3 delivered/current/not yet accepted complete.
+
+P1  Mistä kone saa verkkoasetuksensa? — COMPLETE
+P2  Yksityinen I P ja julkinen I P. — COMPLETE
+P3  Miten monta laitetta voi käyttää yhtä julkista I P -osoitetta? NAT/PAT. — CURRENT / DELIVERED / NOT YET ACCEPTED
+P4  Mitä kotireititin oikeastaan tekee? — PROSPECTIVE
+P5  IPv6 kevyt orientaatio. — PROSPECTIVE
+P6  Synteesi ja exit gate. — PROSPECTIVE
+
+Tämä kuusiosainen rakenne lukittiin toimitetun P1:n alussa. Aiempi kymmenosainen luonnos on SUPERSEDED eikä saa aiheuttaa päällekkäisiä DHCP-, private/public-IP- tai NAT/PAT-oppitunteja.
+
+CH05:N TAVOITE
+Oppija ymmärtää, mistä verkkoasetukset tulevat, mitä eri asetukset tekevät ja
+miten DHCP, gateway, private/public IP, NAT ja PAT liittyvät toisiinsa.
+
+CH06 — REACHABILITY JA VERKKOVIANRAJAUS
+Core:
+- reachability eli tavoitettavuus;
+- ICMP;
+- ping ja sen päätelmärajat;
+- TTL / hop limit;
+- traceroute / tracert;
+- DNS-vika vs reititysvika vs palveluvika;
+- expected state → observed state → hypothesis → test.
+
+Käytännön silta:
+- ipconfig / all;
+- ping;
+- tracert;
+- nslookup tai Resolve-DnsName;
+- tulosten tulkinta ilman liian varmoja johtopäätöksiä.
+
+CH07 — HTTP JA CLIENT–SERVER REQUEST/RESPONSE
+Core:
+- client, server ja request/response;
+- method, path, status, headers ja body;
+- selaimen, DNS:n, TCP:n ja TLS:n yhteys HTTP-tapahtumaan;
+- ensimmäinen silta Applications / Web / API -vaiheeseen.
+
+CH08 — TLS / HTTPS
+Core:
+- confidentiality, integrity ja authentication;
+- sertifikaatti ja trust chain käsitetasolla;
+- mitä HTTPS suojaa ja mitä se ei todista;
+- näkyvä metadata vs salattu sisältö.
+
+CH09 — FIREWALL, PROXY JA VPN
+Core:
+- allow/deny ja stateful filtering;
+- inbound/outbound-rajat;
+- proxy välittäjänä;
+- VPN tunnelina ja trust shiftinä;
+- privacy ≠ anonymity ≠ device integrity.
+
+CH10 — PACKET CAPTURE -SILTA KÄYTÄNTÖÖN
+Core:
+- capture point;
+- packet/frame/header/payload;
+- mitä salatusta liikenteestä voi näkyä;
+- Wireshark-käsitemalli;
+- ensimmäinen hallittu Screen Mode -packet capture.
+
+NETWORKING EXIT GATE CH10:N JÄLKEEN
+Ennen seuraavaa päävaihetta tehdään coverage audit. Siinä tarkistetaan, että
+Ethernet, MAC, ARP, IP, subnet/prefix, routing, gateway, DNS, DHCP, NAT/PAT,
+TCP, UDP, ports, sockets, HTTP, TLS, firewall, proxy, VPN ja packet capture ovat
+saaneet suunnitellun perustason. Puuttuvaa ydinkohtaa ei peitetä etenemällä.
+
+======================================================================
+5. SUUNTA NETWORKING-VAIHEEN JÄLKEEN
+======================================================================
+
+Seuraavat kokonaisuudet ovat ROADMAP, eivät vielä lukittuja lesson-numeroita.
+Tarkka chapter- ja lesson-jako tehdään vasta kunkin vaiheen portilla.
+
+PHASE A — APPLICATIONS / WEB / API
+- browser, frontend, backend ja database;
+- HTTP syvempänä käytännön rakenteena;
+- cookies ja sessions;
+- authentication vs authorization;
+- API, REST ja JSON;
+- secrets ja dependencies;
+- web securityn tarvitsemat normaalitoiminnan perusteet ennen hyökkäyksiä.
+
+PHASE B — IDENTITY JA HYBRID IDENTITY
+- account, credential, session ja token;
+- MFA ja passkeys;
+- permissions ja least privilege;
+- Active Directory;
+- Entra ID ja Microsoft 365;
+- OAuth/OIDC-orientaatio;
+- IAM ja hybrid identity;
+- identiteettilokit turvallisuushavaintojen lähteenä.
+
+PHASE C — DATA, PROGRAMMING JA QUERY FOUNDATIONS
+- string, integer, boolean, list, dictionary/object, table, tree ja graph;
+- Pythonilla Read/Trace → Modify → Write → Debug/Test → Automate;
+- PowerShell Windows-kontekstissa;
+- Bash Linux-kontekstissa;
+- files, paths, JSON, parsing ja errors;
+- filtering ja kevyt regex;
+- query-thinking sekä SQL-orientaatio;
+- Git vasta, kun syntyy oikeaa versionhallittavaa työtä.
+
+PHASE D — LOGS & TELEMETRY
+- lokimerkinnän rakenne ja aikaleimat;
+- Windows-, Linux-, authentication- ja application logs;
+- process creation ja command lines;
+- DNS-, firewall- ja network events;
+- Sysmon, EDR ja SIEM käsitteestä tuotteisiin;
+- KQL/SPL vasta, kun kyselyajattelu ja telemetriakonteksti riittävät.
+
+PHASE E — INVESTIGATION METHOD / DFIR FOUNDATION
+- evidence, observation, inference ja hypothesis;
+- baseline, anomaly, scoping ja alternative explanations;
+- timeline ja correlation;
+- triage ja root cause;
+- evidence preservation ja integrity;
+- pieniä Windows/iOS/Android/loki-tapauksia turvallisessa rajauksessa;
+- teknisesti puolustettava tutkimusraportti.
+
+PHASE F — ATTACK & DEFENSE FUNDAMENTALS
+- threat model ja attack surface;
+- vulnerability, misconfiguration ja exploit;
+- initial access, execution, persistence ja privilege käsitetasolla;
+- phishing, malicious links/attachments ja BEC;
+- defensive controls ja detection opportunities;
+- offensive-harjoittelu vain omassa labrassa, CTF:ssä tai luvallisessa kohteessa.
+
+PHASE G — APPLIED SCRIPTING, QUERYING AND AUTOMATION
+- lokien parsiminen Pythonilla;
+- Windows-triage PowerShellilla;
+- Linux-triage Bashilla;
+- API- ja tiedostotyön automaatio;
+- secrets ja input turvallisesti;
+- AI-avusteinen koodi, debugging ja testaus;
+- itsenäisen ja AI-avusteisen osaamisen erottaminen.
+
+PHASE H — SECURITY OPERATIONS INTEGRATION
+- alert ja triage;
+- investigation queue;
+- detection logic;
+- false positive / false negative;
+- incident response;
+- endpoint, identity, network ja cloud evidence yhdessä;
+- Mini-SOC ja Mini-Detection.
+
+PHASE I — CAREER DISCOVERY JA ERIKOISTUMINEN
+- Mini-DFIR;
+- Mini-Pentest;
+- Mini-Threat Hunting;
+- Mini-Detection Engineering;
+- Mini-AI Security;
+- kiinnostuksen, suoritusnäytön ja työmarkkinan yhdistäminen;
+- pieni määrä vahvoja portfolio-caseja määrän sijaan.
+
+Erikoistumista ei lukita ennen kuin kokemusta ja näyttöä on riittävästi.
+
+======================================================================
+6. AI STUDIO — TOISTUVA RINNAKKAISRATA
+======================================================================
+
+AI Studio on käyttäjän toiveen mukainen jatkuva oppimisrata. Se alkaa nyt,
+kulkee MAINLINEn rinnalla ja syvenee teknisten prerequisitejen kasvaessa.
+
+AI Studio ei ole pelkkä promptilista. Jokaisessa käytännön osassa erotellaan:
+- tavoite;
+- syöte ja käytettävä aineisto;
+- työkalun rooli;
+- odotettu tuotos;
+- rajoitteet ja tietosuojaluokka;
+- tarkistusmenetelmä;
+- mitä käyttäjä teki itse;
+- mitä AI teki;
+- mitä osaamisesta voidaan tai ei voida päätellä.
+
+------------------------------
+AI LEVEL 1 — HYÖDYLLINEN KÄYTTÖ NYT
+------------------------------
+
+AI-01 — MITÄ LLM TEKEE
+Tokens, context, next-token prediction käsitetasolla, hallucination ja miksi
+sujuva vastaus ei ole sama kuin tosi vastaus.
+
+AI-02 — HYVÄ TOIMEKSIANTO
+Tavoite, konteksti, aineisto, rajaus, laatuvaatimukset, formaatti ja stop-ehto.
+Harjoitus: muutetaan epämääräinen pyyntö täsmälliseksi työbriefiksi.
+
+AI-03 — ITEROINTI ILMAN AJELAUTUMISTA
+Suunnitelma → ensimmäinen tuotos → kritiikki → korjaus → hyväksyntäkriteerit.
+Harjoitus: sama tehtävä ensin avoimena ja sitten kontrolloituna versiona.
+
+AI-04 — LÄHDEPOHJAINEN TUTKIMUS
+Ajantasainen haku, ensisijaiset lähteet, viitteet, ristiriidat, päivämäärät ja
+väitteiden jäljitettävyys.
+
+AI-05 — TIEDOSTOT, PROJEKTIT JA JATKUVUUS
+Projektin ohjeet, lähdetiedostot, keskustelut, muistirajat, versiointi ja
+kanoninen lähde. Harjoitus toteutetaan turvallisella harjoitusaineistolla.
+
+AI-06 — SAMA TEHTÄVÄ, ERI TYÖKALU
+ChatGPT, Gemini, Claude, Lumo ja Copilot vertaillaan samalla rajatulla tehtävällä.
+Arviointikriteerit: oikeellisuus, lähteet, ohjeiden noudattaminen, käytettävyys,
+tietosuoja, nopeus, muokattavuus ja todellinen lisäarvo.
+
+AI-07 — AI KRIITTISENÄ VASTATARKASTAJANA
+AI etsii epävarmuudet, normaalit vaihtoehtoiset selitykset, puuttuvan datan ja
+väitteet, joita aineisto ei kanna. Käyttäjä ratkaisee, mitkä korjaukset hyväksyy.
+
+AI-08 — ARKITYÖN TEHOSTAMINEN
+Viestit, suunnitelmat, vertailut, ideointi, pitkästä aineistosta tiivistäminen,
+taulukot, dokumentit ja toistuvat työnkulut. Jokaisessa tapauksessa arvioidaan,
+onko AI oikeasti nopeampi ja turvallinen.
+
+------------------------------
+AI LEVEL 2 — OHJATUT TUOTOKSET
+------------------------------
+
+AI-09 — DATA-ANALYYSI
+CSV/Excel-aineiston laatu, puhdistus, laskenta, kaaviot, havainto vs päätelmä ja
+toistettava analyysi.
+
+AI-10 — DOKUMENTIT, ESITYKSET JA VISUAALISET TUOTOKSET
+Rakenteen suunnittelu, lähdeaineiston säilyttäminen, tyylijärjestelmä, kuvat,
+esitykset ja lopputuloksen visuaalinen QA.
+
+AI-11 — AUTOMATIONS JA TOISTUVAT TEHTÄVÄT
+Milloin automatisointi kannattaa, trigger, input, output, virhetilanne,
+hyväksyntäportti ja seuranta.
+
+AI-12 — AI-AVUSTEINEN KOODAUS
+Vaatimus → pieni toteutus → käyttäjän lukeminen → testit → virheen korjaus.
+AI:n tuottamaa koodia ei merkitä käyttäjän itsenäiseksi ohjelmointiosaamiseksi.
+
+AI-13 — OMA TYÖKALUPAKKI JA TYÖKALUN VALINTA
+Tehtävätyypit, työkalujen vahvuudet, kustannus, saatavuus, integraatiot,
+tietosuoja ja vendor lock-in. Ominaisuudet tarkistetaan aina oppitunnin aikana,
+koska palvelut muuttuvat nopeasti.
+
+------------------------------
+AI LEVEL 3 — TEKNINEN PERUSTA
+------------------------------
+
+AI-14 — MALLIT, CONTEXT JA INFERENCE
+Model, context window, system/user/tool roles, inference, latency ja cost.
+
+AI-15 — EMBEDDINGS, VECTOR DATABASE JA RAG
+Miten aineisto haetaan vastauksen tueksi, mitä retrieval voi jättää löytämättä
+ja miksi lähdeviite ei automaattisesti todista tulkintaa.
+
+AI-16 — API:T JA STRUCTURED OUTPUT
+Request/response, JSON, schema, authentication, rate limits ja error handling.
+
+AI-17 — AGENTS, TOOLS JA MCP
+Agent loop, tool call, permission boundary, state, human approval ja Model
+Context Protocol. Käytännön työ vasta, kun API- ja turvallisuusperusteet riittävät.
+
+AI-18 — LOCAL MODELS
+Paikallinen inference, laitevaatimukset, yksityisyysedut, päivitykset,
+mallipainot ja se, mitä paikallisuus ei automaattisesti suojaa.
+
+------------------------------
+AI LEVEL 4 — AI SECURITY JA ARVIOINTI
+------------------------------
+
+AI-19 — PROMPT INJECTION
+Direct ja indirect prompt injection, epäluotettava sisältö ja instruction/data
+boundary.
+
+AI-20 — DATA LEAKAGE JA SECRETS
+Mitä palveluun saa syöttää, vähimmän tiedon periaate, credentials, henkilötieto,
+liikesalaisuus ja säilytyskäytännöt.
+
+AI-21 — INSECURE TOOL USE JA EXCESSIVE AGENCY
+Miksi työkalun käyttö, oikeudet ja state-changing actions vaativat rajoja,
+vahvistuksia ja rollback-ajattelua.
+
+AI-22 — RAG JA VECTOR SECURITY
+Poisoning, väärä retrieval, pääsynhallinta, lähteiden provenance ja tenant-rajat.
+
+AI-23 — EVALUATION
+Testitapausten suunnittelu, rubric, groundedness, instruction following,
+regressiot ja systemaattinen vertailu.
+
+AI-24 — AI RED TEAMING JA GOVERNANCE
+Väärinkäyttötapaukset, riskiluokittelu, kontrollit, dokumentointi ja turvallinen
+testaus luvallisessa ympäristössä.
+
+======================================================================
+7. AI-TYÖKALUJEN OPETUSROOLIT
+======================================================================
+
+Työkalut eivät muodosta paremmuusjärjestystä. Valinta tehdään tehtävän,
+aineiston, saatavuuden, integraatioiden ja tietosuojan perusteella.
+
+CHATGPT
+Opetetaan erityisesti:
+- keskustelu vs projekti;
+- projektiohjeet, lähteet ja jatkuvuus;
+- web research ja lähteet;
+- tiedosto-, data-, kuva-, dokumentti- ja koodityö;
+- voice/kuuntelu;
+- Canvas/Work/agent-tyyppiset työnkulut silloin, kun ne ovat tilillä saatavilla;
+- apps/connectors ja automaatiot;
+- hyväksyntärajat sekä pysyvät ja tilapäiset artefaktit.
+
+GEMINI
+Opetetaan erityisesti:
+- Google-ekosysteemin yhteydet käyttäjän luvalla;
+- Deep Research ja tutkimussuunnitelman arviointi;
+- pitkän aineiston käsittely;
+- Canvas ja Audio Overview -tyyppiset oppimistuotokset;
+- saman tutkimustehtävän vertailu ChatGPT:n kanssa.
+
+CLAUDE
+Opetetaan erityisesti:
+- pitkien dokumenttien analyysi;
+- Projects ja persistent context;
+- Artifacts: dokumentit, visualisoinnit, koodi ja interaktiiviset tuotokset;
+- research, citations ja integrations;
+- saman kirjoitus-/analyysitehtävän vertailu muihin malleihin.
+
+LUMO
+Opetetaan erityisesti:
+- privacy-first-työkalun valintaperusteet;
+- no-logs-, no-training- ja zero-access -väitteiden täsmällinen lukeminen
+  vendorin dokumentaatiosta;
+- Proton Drive -aineistot ja Projects;
+- model/mode-valinta;
+- ero markkinointiväitteen, dokumentoidun kontrollin ja käyttäjän oman
+  riskipäätöksen välillä.
+
+MICROSOFT COPILOT
+Opetetaan erityisesti:
+- Copilot Chat;
+- Word-, Excel-, PowerPoint-, Outlook-, Teams- ja Windows-kontekstit silloin,
+  kun käyttäjän lisenssi mahdollistaa ne;
+- prompts, review/refine ja työnkulun sisäinen konteksti;
+- agents/repetitive work vasta oikeuksien ja hyväksyntärajojen kanssa;
+- kuluttaja-Copilotin ja organisaation Microsoft 365 Copilotin erot.
+
+SAATAVUUS- JA VERSIOSÄÄNTÖ
+Tuotenimet, mallit, hinnat, käyttörajat, integraatiot ja ominaisuudet ovat
+muuttuvaa tietoa. Ne tarkistetaan virallisesta lähteestä juuri ennen käytännön
+oppituntia. Roadmap ei lupaa tiettyä maksullista ominaisuutta.
+
+======================================================================
+8. KUUNNELTAVAT VAIHTELUOSAT
+======================================================================
+
+Nämä ovat Drive Mode -kelpoisia. Niissä rakennetaan kokonaiskuvaa, kiinnostusta
+ja ammattisanastoa ilman käytännön osaamisväitettä.
+
+L-01 — Mitä internetissä oikeasti tapahtuu, kun avaat yhden verkkosivun?
+DNS → route → TCP/QUIC → TLS → HTTP → content.
+
+L-02 — Miksi “VPN päällä” ei tarkoita anonyymia tai turvallista laitetta?
+
+L-03 — Miten mainosverkostot, fingerprinting ja data brokers seuraavat ihmisiä?
+
+L-04 — Bluetooth-, Wi-Fi-, NFC- ja QR-jäljet: mitä syntyy ja kuka voi nähdä?
+
+L-05 — Pixel + GrapheneOS: threat model ennen asetusten koventamista.
+
+L-06 — iPhone-lokit: mitä stacks-, jetsam- ja crash-raportti voivat ja eivät
+todistaa?
+
+L-07 — Päivä DFIR-tutkijana: incidentin ensimmäisestä hälytyksestä timelineen.
+
+L-08 — Päivä penetration testerinä: scope, recon, finding, evidence ja report.
+
+L-09 — Päivä threat hunterina: hypoteesi, telemetria, kysely ja falsifiointi.
+
+L-10 — Päivä detection engineerinä: signaali, sääntö, testaus ja false positives.
+
+L-11 — Päivä AI security -asiantuntijana: injection, tools, data ja evaluation.
+
+L-12 — Ransomware-tapaus mekanismiketjuna ilman sensaatioita.
+
+L-13 — Social engineering: miksi ihminen uskoo ja miten prosessi suojaa.
+
+L-14 — Dark web: mikä se teknisesti on, mitä myyttejä siihen liittyy ja missä
+kulkevat lailliset rajat.
+
+L-15 — Tunnettu kybertapaus kriittisesti: mitä tiedettiin silloin, mitä pääteltiin
+väärin ja mikä näyttö lopulta ratkaisi.
+
+L-16 — Passwords, password managers, MFA ja passkeys yhtenä tapahtumaketjuna.
+
+L-17 — Mitä pilvi oikeasti tarkoittaa: tenant, identity, data, logs ja shared
+responsibility.
+
+L-18 — Miten hyökkääjä ja puolustaja katsovat samaa lokimerkintää eri tavoin?
+
+L-19 — Miten AI muuttaa kyberturvan työtä ilman “AI korvaa kaikki” -myyttiä?
+
+L-20 — Kyberturvayrittäjyys: ongelma, asiakas, näyttö, vastuu ja riskiraja.
+
+======================================================================
+9. TEKEMÄLLÄ OPITTAVAT VAIHTELUOSAT
+======================================================================
+
+Nämä tehdään Screen Modessa tai kevyenä Relaxed Mode -harjoituksena.
+
+S-01 — ChatGPT-työbriefin rakentaminen oikeasta pienestä tehtävästä.
+S-02 — Saman tehtävän vertailu ChatGPT:llä, Geminillä, Claudella ja Lumolla.
+S-03 — Vastausten fact-check ja lähdematriisi.
+S-04 — Turvallinen tiedostotyö: lähde → muunnos → QA → valmis artefakti.
+S-05 — Pieni CSV-analyysi ja kaavio sekä päätelmärajojen tarkistus.
+S-06 — Windowsin verkkoasetusten tutkiminen ilman muutoksia.
+S-07 — DNS-vs-route-vs-service -vikatilanteen päättelyharjoitus.
+S-08 — Ensimmäinen oma Wireshark-capture turvallisessa ympäristössä.
+S-09 — Python: lue ja suodata turvallinen tekstitiedosto.
+S-10 — PowerShell: listaa prosessit ja selitä, mitä tulos ei todista.
+S-11 — Lokiotteesta observation/inference/hypothesis-taulukko.
+S-12 — Pieni timeline useasta aikaleimasta.
+S-13 — Prompt injection -demonstration suljetulla vaarattomalla aineistolla.
+S-14 — Rakennetaan yksinkertainen AI-eval rubric ja testataan kaksi vastausta.
+S-15 — Mini-portfolio-note: tavoite, oma työ, AI:n työ, evidenssi ja opittu asia.
+
+Harjoituksen suorittaminen AI:n ohjauksessa ei automaattisesti nosta VERIFIED
+SKILL STATEa. Varmennus tehdään erillisellä tarkoituksenmukaisella portilla.
+
+======================================================================
+10. LÄHIVAIHEEN SUOSITELTU VAIHTELUVALIKKO
+======================================================================
+
+MAINLINE säilyy nykyisessä CH05-P3:ssa. P4:ään siirrytään vasta P3:n hyväksynnän jälkeen. CH05:n rinnalle voidaan
+tarjota seuraavia vaihtoehtoja ilman MAINLINE-siirtymää:
+
+NYT SOPIVAT AI-OSAT
+- AI-01 Mitä LLM tekee;
+- AI-02 Hyvä toimeksianto;
+- AI-03 Iterointi ilman ajelautumista;
+- AI-04 Lähdepohjainen tutkimus;
+- AI-05 Tiedostot, projektit ja jatkuvuus;
+- AI-06 Sama tehtävä, eri työkalu;
+- S-01 ChatGPT-työbriefi;
+- S-03 fact-check ja lähdematriisi.
+
+NYT SOPIVAT KUUNTELUOSAT
+- L-01 verkkosivun koko tapahtumaketju;
+- L-02 VPN-myytit;
+- L-03 seuranta ja fingerprinting;
+- L-04 langattomien teknologioiden jäljet;
+- L-05 GrapheneOS ja threat model;
+- L-07 päivä DFIR-tutkijana;
+- L-08 päivä pentesterinä;
+- L-11 päivä AI security -asiantuntijana;
+- L-16 passwords, MFA ja passkeys;
+- L-19 AI:n vaikutus kyberturvatyöhön.
+
+CH06:N YHTEYDESSÄ SOPIVAT
+- S-06 verkkoasetusten tutkiminen;
+- S-07 vianrajauspäättely;
+- L-07 DFIR-päivä;
+- L-18 hyökkääjä ja puolustaja samassa lokissa.
+
+CH07–CH08:N YHTEYDESSÄ SOPIVAT
+- L-01 verkkosivun tapahtumaketju;
+- AI-04 lähdepohjainen tutkimus;
+- S-03 fact-check;
+- L-16 authentication-ketju;
+- ensimmäinen turvallinen prompt injection -orientaatio ilman exploit-harjoitusta.
+
+CH09–CH10:N YHTEYDESSÄ SOPIVAT
+- L-02 VPN-myytit;
+- L-03 tracking/fingerprinting;
+- L-04 langattomat jäljet;
+- S-08 ensimmäinen packet capture;
+- AI-07 kriittinen vastatarkastus.
+
+======================================================================
+11. OPPITUNNIN VALINTA JA TILAPÄIVITYS
+======================================================================
+
+Kun käyttäjä pyytää jatkamaan opintoja ilman muuta rajausta:
+1. jatka CURRENT MAINLINE -oppitunnista;
+2. älä hyppää sivuosioon automaattisesti;
+3. jos vaihtelulle on selvä tarve, tarjoa enintään kaksi selkeää vaihtoehtoa:
+   yksi kuunneltava ja yksi tekemällä opittava;
+4. kerro, ettei vaihtoehdon valinta hukkaa MAINLINE-kohtaa.
+
+Kun käyttäjä pyytää vaihtelua, AI-aihetta tai kuunneltavaa sisältöä:
+1. valitse tasoltaan sopiva rinnakkaisosa;
+2. kirjaa branch-tunnus ja paluupiste;
+3. opeta osa loppuun tai merkitse se kesken;
+4. älä merkitse MAINLINE-tuntia suoritetuksi;
+5. palaa lukittuun MAINLINE-kohtaan käyttäjän pyytäessä.
+
+LIVE CONTINUITY COMMIT sisältää sivuosan jälkeen:
+- branch ID ja nimi;
+- status COMPLETE / INCOMPLETE / PARKED;
+- mitä käsiteltiin;
+- VERIFIED SKILL STATE change tai NO CHANGE;
+- MAINLINE-return point muuttumattomana.
+
+======================================================================
+12. PEDAGOGISET LAATUPORTIT
+======================================================================
+
+Ennen uuden chapterin tai AI Studio -osan toimitusta tarkistetaan:
+- Onko prerequisite-taso riittävä?
+- Onko aihe jo käsitelty samalla syvyydellä?
+- Tuoko osa uutta mekanismia, sovellusta tai päättelyä?
+- Onko moodi oikea: Drive, Relaxed vai Screen?
+- Onko käytännön tehtävä turvallinen ja palautettavissa?
+- Onko tuotetieto tarkistettu ajantasaisesta virallisesta lähteestä?
+- Onko maksullinen/saatavuusriippuvainen ominaisuus merkitty ehdolliseksi?
+- Onko AI:n osuus erotettu käyttäjän omasta työstä?
+- Millä evidenssillä oppimistulos voidaan myöhemmin todentaa?
+- Mikä normaali vaihtoehtoinen selitys voisi kumota liian varman päätelmän?
+
+AI-OPPITUNNIN MINIMIRAKENNE
+1. Mekanismi selkokielellä.
+2. Oikea englanninkielinen termi.
+3. Konkreettinen hyöty.
+4. Käyttöraja tai riski.
+5. Ohjattu harjoitus, jos moodi sallii.
+6. Tuloksen tarkastus.
+7. Mitä tästä opittiin ja mitä ei vielä osata itsenäisesti.
+
+======================================================================
+13. MUUTOSHALLINTA
+======================================================================
+
+LUKITTU
+- nykyinen progress boundary;
+- MAINLINE- ja branch-tilojen erottelu;
+- CH05:n jo toimitettu tavoite ja kuusiosainen P1–P6-manifesti;
+- CH06–CH10 Networking-järjestyksen tämänhetkinen hyväksytty rakenne;
+- Master Mapin vaiheiden dependency-järjestys;
+- osaamisen todentamisen erottaminen altistumisesta.
+
+MUUTETTAVISSA ENNEN TOIMITUSTA
+- vielä toimittamattoman oppitunnin tarkka sisältö ja pituus;
+- rinnakkaisosion ajankohta;
+- työkaluesimerkit niiden saatavuuden mukaan;
+- ROADMAP-vaiheiden tarkka chapter- ja lesson-jako;
+- harjoituksen aineisto ja vaikeustaso.
+
+EI SALLITTUA
+- kirjoittaa suunnitelmaa jälkikäteen toteutuneeksi historiaksi;
+- merkitä kuuntelua käytännön osaamiseksi;
+- täyttää puuttuvaa kanonista oppituntitekstiä rekonstruktiolla;
+- antaa sivupolun siirtää MAINLINEa vahingossa;
+- opettaa muuttunutta tuotetietoa tarkistamatta sitä;
+- käsitellä vendorin tietosuojaväitettä absoluuttisena turvallisuustakuuna.
+
+======================================================================
+8. MAINTENANCE / RELEASE STATE
+======================================================================
+
+CURRENT MAINTENANCE WORK
+Correct the RC5 candidate after two findings:
+1. learning progress advanced beyond the 2026-09-01 snapshot;
+2. per-lesson static Project Source replacement would create unacceptable user maintenance work.
+
+TARGET CORE PROJECT SOURCES AFTER ADOPTION
+1. RC5_v1.5_Effective_Master_Source_060926.txt
+2. RC5_v1.3_Academy_State_Continuity_060926.txt
+3. RC5_v1.2_Canonical_Learning_Content_060926.txt
+
+PROJECT INSTRUCTIONS FIELD
+RC5_v1.9_Project_Instructions_060926.txt
+
+CURRENT ADOPTION STATUS
+PRODUCTION FILES PREPARED; NOT YET INSTALLED OR VERIFIED IN THE PROJECT UI.
+
+ARCHIVE AFTER VERIFIED ADOPTION
+- RC1–RC4 active source/state/manifest predecessors;
+- Project Instructions v1.2, v1.3 and invalid/unapproved later candidates;
+- earlier RC5/RC5R2/RC5R3 and 2026-09-01 RC5 candidate files;
+- old mutable Portfolio Register after its current state is consolidated.
+
+Archive means preserved for audit/rollback, not deleted.
+
+======================================================================
+9. PROVENANCE AND LATEST CORRECTION
+======================================================================
+
+Primary earlier source set:
+- RC1_v1.2_Master_Source_Baseline;
+- RC2_v1.2_Continuity_Canonical_Content_Update;
+- RC3_v1.2_Portfolio_Continuity_Update;
+- RC4_v1.2_Master_Source_Lesson_Continuity_Update;
+- RC4_v1.1_Learning_State;
+- RC4_v1.1_CH04_Completion_Manifest;
+- RC4_v1.1_Curriculum_Execution_Manifest;
+- RC4_v1.2_Project_Instructions;
+- RC4_v1.3 Project Instructions candidate;
+- ADDENDUM_v1.0_iOS_Investigation;
+- REGISTER_v1.0_Portfolio_Register;
+- EXPLORATION_Pixel_GrapheneOS_Alustus_ja_Salaus.
+
+Newest primary-evidence continuity correction applied on 2026-09-06:
+- CH05-P1 delivered and accepted through the user's subsequent “jatka” message;
+- CH05-P2 delivered and accepted through the user's subsequent “jatka” message;
+- CH05-P3 delivered and current, but not yet accepted complete;
+- the delivered six-part CH05 manifest supersedes the stale ten-part prospective draft;
+- exact P1–P3 texts recovered into the canonical archive;
+- CH04-P20 completion remains a later checkpoint assertion whose primary lesson/acceptance record has not been recovered.
+
+The remaining exact-content/evidence gap is CH04-P20. It was not reconstructed, and it must not force the learner backwards while CH05 continuity is primary-evidence confirmed.
+
+END OF STATE

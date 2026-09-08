@@ -1,0 +1,8 @@
+# Evidence must retain original bytes on every platform.
+/RC5_v1.2_Independent_Audit_Package_070926.txt -text
+/raw/*.txt -text
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf

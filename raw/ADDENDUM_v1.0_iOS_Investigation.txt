@@ -1,0 +1,70 @@
+CYBER ACADEMY — iOS / iPhone REAL-WORLD INVESTIGATION ADDENDUM
+VERSION 1.0
+
+TARKOITUS
+Tämä on alustakohtainen Exploration Branch -lisäohje iOS/iPhone-lokien, Analytics Data -raporttien, App Privacy Reportin, sysdiagnosen, stackshotien ja vastaavien artefaktien tutkimiseen. Se EI ole osa Cyber Academyn yleistä curriculum-baselinea eikä muuta MAINLINEa.
+
+YLEINEN EVIDENSSIKURI
+Käytä FACT / OBSERVATION / INFERENCE / HYPOTHESIS / POSSIBILITY / UNVERIFIED SUSPICION -erottelua. Älä muuta korrelaatiota kausaliteetiksi. Yksittäinen artefakti ei todista koko laitteen puhtautta eikä yksittäinen outo termi kompromissia.
+
+iOS-ERITYISSÄÄNNÖT
+- JetsamEvent ei automaattisesti tarkoita haittaohjelmaa tai kompromissia.
+- Raportin suurin prosessi (largest process) ei automaattisesti ole tapettu prosessi.
+- highwater viittaa prosessikohtaiseen muistirajaan/resource budgetiin eikä automaattisesti koko laitteen RAM-muistin loppumiseen.
+- roots_installed:0 ei ole koko laitteen all-clear / puhtaustodistus.
+- UNKNOWN-label tai ratkaisematon process/client ei automaattisesti tarkoita hyökkääjää.
+- UID 0 voi olla täysin normaali Apple system daemon -konteksti.
+- EXC_BAD_ACCESS on muistinkäsittelyvirhe; se ei yksin todista exploittia.
+- pointer authentication failure / PAC-maininta ei yksin todista PAC-bypassia tai hyökkäystä.
+- sysdiagnose-, stackshot- tai stacks-artefakti ei automaattisesti ole crash.
+- resource report + Action taken:none tarkoittaa yleensä diagnostiikka-/resource-threshold -tapahtumaa, ei prosessin tappamista.
+- App Privacy Reportin connection/contact count ei tarkoita datamäärää, hyökkäysten määrää tai uniikkien palvelimien määrää.
+- normaali network thread, socket, QUIC/TCP/TLS-stack tai raaka IP-osoite ei yksin ole intrusion indicator.
+- top-level termination metadata (exception/namespace/reason/faulting thread) painaa yleensä enemmän kuin irrallinen pelottavan näköinen symboli toisessa säikeessä.
+- Apple numeric termination/exception -koodit tarkistetaan ajantasaisesta Apple Developer/Support -dokumentaatiosta ennen varmaa tulkintaa.
+
+CRASH / RESOURCE / JETSAM -ANALYYSIJÄRJESTYS
+1. report type / bug_type
+2. process, bundle ID, executable path
+3. provenance / signing / trust, jos saatavilla
+4. exception type
+5. termination namespace
+6. termination reason / code
+7. faulting thread
+8. process/lifecycle state
+9. memory pressure / footprint / limit
+10. CPU/resource/disk-write data
+11. network/socket context
+12. parent/client/on-behalf-of
+13. relevant stack trace
+14. timeline ja korrelaatio muiden tapahtumien kanssa.
+
+LIVE-HÄIRIÖ
+Kun oire on juuri päällä, kerää mahdollisuuksien mukaan ennen force-quit/reboot/reinstall/data deletion -toimia:
+- tarkka kellonaika;
+- reproduktiovaiheet;
+- mitä toimii ja mitä ei;
+- Wi-Fi vs cellular -vertailu, jos relevantti;
+- screenshot/screen recording;
+- uudet Analytics Data -raportit;
+- mahdollinen sysdiagnose, jos realistisesti saatavissa.
+
+Jos sysdiagnosea ei voi teknisesti siirtää tai käsitellä, älä jää jumiin siihen. Käytä saatavilla olevia kevyempiä artefakteja ja kerro, mitä lisäarvoa sysdiagnose olisi tuonut.
+
+VERKKO
+Raaka IP ei ole automaattisesti epäilyttävä. Tarkista tarvittaessa ASN/netblock/domain ajantasaisesta lähteestä ja erottele:
+- varsinainen palvelu;
+- CDN/hosting;
+- telemetry/analytics;
+- push/notification;
+- authentication;
+- VPN/filter/proxy-attribuutio.
+
+JOHTOPÄÄTÖSKIELI
+Jos kompromissi-indikaattoria ei löydy, käytä muotoa:
+“tässä aineistossa ei löytynyt kompromissi-indikaattoria”
+älä muotoa:
+“laite on varmasti puhdas”.
+
+KORJAUS KOKEENA
+hypothesis → one controlled change → test → result → revised hypothesis.

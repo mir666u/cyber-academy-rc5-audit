@@ -1,0 +1,49 @@
+CYBER ACADEMY — CH04 COMPLETION MANIFEST
+VERSION 1.1
+Päiväys: 2026-08-24
+
+STATUS
+APPROVED / ACTIVE PROSPECTIVE COMPLETION PLAN — hyväksytty 2026-08-25.
+Tämä EI ole retroaktiivinen alkuperäissuunnitelma, vaan tästä eteenpäin voimassa oleva CH04 completion plan.
+
+CHAPTER
+CH04 — TCP, UDP ja portit: miten data löytää oikean ohjelman ja mitä “yhteys” oikeasti tarkoittaa?
+
+VERIFIED CURRENT POINT
+Viimeisin käyttäjän vahvistama oppitunti: CH04-P17.
+P8–P17:n otsikot ovat nykyisestä keskustelusta palautettavissa.
+P1–P7:n tarkkoja otsikoita/sanamuotoja ei rekonstruoida ilman alkuperäistä sisältöä.
+
+CHAPTER OBJECTIVE
+Oppija pystyy käsitetasolla seuraamaan, miten oikealle IP-koneelle saapuva liikenne erotellaan oikealle verkkopäätepisteelle ja miten TCP ja UDP tarjoavat erilaiset kuljetusmallit. Hän erottaa yhteysyrityksen, muodostuneen TCP-yhteyden, datansiirron ja yhteyden lopettamisen sekä tekee rajattuja troubleshooting-päätelmiä ilman perusteetonta johtopäätöshyppyä.
+
+PROPOSED REMAINING PLAN
+P18 — Socket: portti vs käyttöjärjestelmän verkkopäätepiste.
+P19 — Demultiplexing käsitetasolla: miten TCP/UDP-liikenne yhdistyy oikeaan socketiin/prosessiin.
+P20 — Chapter synthesis + low-stakes comprehension/retention check + exit gate.
+
+PLANNED TOTAL
+20 osaa tämän hyväksytyn completion planin mukaan.
+Luku 4:n “20 osaa” ei ole aiempi fakta eikä tekninen pakko, vaan 24.8.2026 laadittu prospektiivinen rajaus. Jos P18–P20:n aikana ilmenee todellinen pedagoginen puute, manifestia voidaan muuttaa eksplisiittisesti ennen uuden osan lisäämistä.
+
+WHY THESE THREE
+- MASTER SOURCE listaa Networking-foundationissa ports + sockets.
+- Portit on jo käsitelty, mutta socket-käsite ei ole vielä varmennetusti käsitelty kanonisessa CH4-jatkumossa.
+- Socket/process mapping sulkee chapterin alkuperäisen kysymyksen “miten data löytää oikean ohjelman?” ilman syvää socket-ohjelmointia.
+- P20 ei lisää uutta suurta mekanismia vaan testaa chapter objectiven täyttymistä.
+
+DEFERRED
+TCP flow/congestion control, SACK/MSS/options, täydellinen state machine, QUIC, syvä port scanning, socket API -ohjelmointi ja käytännön packet capture siirretään myöhempään nimettyyn spiral-/Screen-kontekstiin.
+
+EXIT CRITERIA
+Oppija pystyy ohjatusti selittämään:
+- IP vs portti;
+- TCP-yhteyden muodostamisen ja lopettamisen;
+- sequence/ACK/retransmission-perusidean;
+- UDP:n keskeisen eron TCP:n tarjoamaan malliin;
+- source/destination-porttien ja socketin roolin;
+- connection attempt vs established connection vs application success;
+- open/closed/filtered-havaintojen rajat;
+- vian rajaamisen ensimmäisen epäonnistuvan vaiheen avulla.
+
+Ei skill verification.

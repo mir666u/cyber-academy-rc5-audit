@@ -1,0 +1,135 @@
+CYBER ACADEMY — PORTFOLIO REGISTER
+VERSION 1.0
+Päiväys: 2026-08-16
+
+TARKOITUS
+Tämä on Cyber Academyn muuttuva portfolio-candidate -rekisteri.
+
+Tämä tiedosto EI ole:
+- curriculum-baseline;
+- MASTER MAP;
+- ACTIVE LEARNING QUEUE;
+- VERIFIED SKILL STATE;
+- eikä valmis julkinen portfolio.
+
+Tavoite on säilyttää pieni määrä potentiaalisesti vahvoja teknisiä caseja niin, että niiden myöhempi validointi, dokumentointi ja sanitointi on mahdollista.
+
+QUALITY OVER QUANTITY.
+
+==================================================
+CA-PF-001
+iOS / iPhone DFIR REAL-WORLD INVESTIGATION
+==================================================
+
+STATUS
+ACTIVE PORTFOLIO CANDIDATE
+NOT PORTFOLIO READY
+NOT INDEPENDENT SKILL PROOF
+
+TYPE
+Real-World Investigation / DFIR / mobile security / data analysis
+
+WHY CANDIDATE
+Case sisältää jo merkittävää näyttöä:
+- suuren sysdiagnose-aineiston käsittelystä;
+- incident/control-vertailusta;
+- unified log -datan analyysistä;
+- evidence register- ja timeline-ajattelusta;
+- hypoteesien eksplisiittisestä testaamisesta;
+- aiempien tulkintojen korjaamisesta uuden evidenssin perusteella;
+- false positive -havaintojen tunnistamisesta;
+- teknisten johtopäätösten varmuustason rajaamisesta;
+- reverse-engineered-lähteiden ja ensisijaisten lähteiden erottamisesta;
+- tutkimusautomaation tarpeen tunnistamisesta.
+
+CURRENT STRENGTH
+Metodologia ja tutkimuspäättely.
+
+CURRENT LIMITATION
+Tutkimus on edelleen aktiivinen eikä lopullinen technical conclusion ole valmis.
+
+Suuri osa työstä on AI-avusteista eikä case sellaisenaan todista itsenäistä DFIR-kompetenssia.
+
+PRESERVE
+- raw/private evidence;
+- source hashes;
+- parser/tool versions;
+- command history;
+- evidence register;
+- timeline;
+- hypothesis matrix;
+- corrections log;
+- control comparisons;
+- QA / counter-check results;
+- final conclusion when available.
+
+PUBLIC VERSION
+Ei vielä rakenneta.
+
+Sanitized/public-versio tehdään vasta teknisen tutkimuksen valmistuttua.
+
+==================================================
+CA-PF-002
+CYBER ACADEMY iOS DFIR RUNNER
+==================================================
+
+STATUS
+ACTIVE PORTFOLIO CANDIDATE
+DESIGN / DEVELOPMENT PHASE
+NOT PORTFOLIO READY
+NOT INDEPENDENT SKILL PROOF
+
+TYPE
+PowerShell / DFIR automation / QA engineering / tooling
+
+OBJECTIVE
+Rakentaa paikallinen read-only DFIR-runner, joka:
+- ajaa määritellyn tutkimusjonon incident- ja control-datalle;
+- tuottaa toistettavat analyysitulokset;
+- tekee automaattiset incident/control-vertailut;
+- suorittaa false-positive- ja QA-vastatarkastuksia;
+- säilyttää audit trailin;
+- tuottaa hash-manifestin;
+- paketoi tulokset jatkoanalyysiä varten;
+- tukee myöhempää portfolio-case-dokumentointia.
+
+PORTFOLIO VALUE
+Mahdollinen vahva engineering-case, jos käyttäjä osallistuu suunnitteluun, ymmärtää toteutuksen, testaa sen ja pystyy myöhemmin osoittamaan olennaiset toimintaperiaatteet myös ilman valmista AI-ohjausta.
+
+PRESERVE
+- requirements;
+- architecture;
+- script versions;
+- test fixtures;
+- test results;
+- failure cases;
+- QA rules;
+- false-positive controls;
+- CHANGELOG;
+- README;
+- sample sanitized output;
+- lessons learned.
+
+NEXT MATURITY GATE
+Toimiva ensimmäinen runner-versio + testattu incident/control-run + QA-pass + dokumentoitu failure handling.
+
+==================================================
+REGISTER RULES
+==================================================
+
+Lisää uusi candidate vain, jos työssä on realistista portfolioarvoa.
+
+Älä lisää:
+- jokaista harjoitusta;
+- jokaista oppituntia;
+- satunnaista komentoa;
+- yksittäistä AI:n generoimaa scriptiä;
+- tavallista tuotteen käyttöönottoa ilman relevanttia teknistä päättelyä.
+
+Candidate voidaan myöhemmin:
+- PROMOTE → PORTFOLIO READY;
+- KEEP → CANDIDATE;
+- ARCHIVE → LEARNING ARTIFACT;
+- DROP → ei portfolioarvoa.
+
+Portfolioon nostetaan lopulta vain pieni määrä vahvoja caseja.

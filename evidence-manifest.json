@@ -1,0 +1,155 @@
+{
+  "package": {
+    "filename": "RC5_v1.2_Independent_Audit_Package_070926.txt",
+    "bytes": 500851,
+    "sha256": "6896500a47650af7f2cf84ce9d55513394b8523c51a510062eb232aef694b0f1",
+    "baseline_commit": "f45469d68d9e5acf5af81f06730d13e4135ddf08"
+  },
+  "note": "Raw files are byte-for-byte extractions of the original package. Integrity verification is not an independent content audit or adoption approval.",
+  "sources": [
+    {
+      "index": 1,
+      "role": "RC5 / tarkastettava",
+      "filename": "RC5_v1.5_Effective_Master_Source_060926.txt",
+      "bytes": 49877,
+      "sha256": "977f4c2abf99e3c8307e077cdc46a25dac4e589748a611b0fe851912c882ade7",
+      "path": "raw/RC5_v1.5_Effective_Master_Source_060926.txt"
+    },
+    {
+      "index": 2,
+      "role": "RC5 / tarkastettava",
+      "filename": "RC5_v1.3_Academy_State_Continuity_060926.txt",
+      "bytes": 41177,
+      "sha256": "2213bd07c3ecb9961110857ecf5fe99f898bb59b556a0bdfcf74534153f7bbcd",
+      "path": "raw/RC5_v1.3_Academy_State_Continuity_060926.txt"
+    },
+    {
+      "index": 3,
+      "role": "RC5 / tarkastettava",
+      "filename": "RC5_v1.2_Canonical_Learning_Content_060926.txt",
+      "bytes": 268798,
+      "sha256": "efd8d9928d9b20906cd072f6a161848fee0eed4e104355d0d5c4a73ac026e99c",
+      "path": "raw/RC5_v1.2_Canonical_Learning_Content_060926.txt"
+    },
+    {
+      "index": 4,
+      "role": "RC5 / tarkastettava",
+      "filename": "RC5_v1.9_Project_Instructions_060926.txt",
+      "bytes": 7584,
+      "sha256": "ce59b6d41d2f3066a2964ed1c997880ec58c8a8888af770ab698a04391ba2d36",
+      "path": "raw/RC5_v1.9_Project_Instructions_060926.txt"
+    },
+    {
+      "index": 5,
+      "role": "historiallinen vertailulähde",
+      "filename": "REGISTER_v1.0_Portfolio_Register_160826.txt",
+      "bytes": 3914,
+      "sha256": "986f89e76e46e642ef1da07a52d96888adabdfcfa58aae4a136e7ce94b1d7345",
+      "path": "raw/REGISTER_v1.0_Portfolio_Register_160826.txt"
+    },
+    {
+      "index": 6,
+      "role": "historiallinen vertailulähde",
+      "filename": "ADDENDUM_v1.0_iOS_Investigation.txt",
+      "bytes": 3725,
+      "sha256": "27c5a3bbc41fdf48cf180543a5717dadeb6a322fc7527f0ea0d9fac222ba8c6c",
+      "path": "raw/ADDENDUM_v1.0_iOS_Investigation.txt"
+    },
+    {
+      "index": 7,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC2_v1.2_Continuity_Canonical_Content_Update_110826.txt",
+      "bytes": 4318,
+      "sha256": "f67f5c36fac223139178dcf2145b6404c84a98fc1e4fa1512a0f52f3758e7f8b",
+      "path": "raw/RC2_v1.2_Continuity_Canonical_Content_Update_110826.txt"
+    },
+    {
+      "index": 8,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.1_Learning_State_250826.txt",
+      "bytes": 1286,
+      "sha256": "07aa850c03ee1d9412ebbdfd4d1e60a05a9d3bde016de020965cdccba082c7f1",
+      "path": "raw/RC4_v1.1_Learning_State_250826.txt"
+    },
+    {
+      "index": 9,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.1_CH04_Completion_Manifest_250826.txt",
+      "bytes": 2739,
+      "sha256": "8ece706fc3a4a25fc5e91e29b3d16b95cb1362b06dce1e11c5f8765140802920",
+      "path": "raw/RC4_v1.1_CH04_Completion_Manifest_250826.txt"
+    },
+    {
+      "index": 10,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.2_Project_Instructions_250826.txt",
+      "bytes": 7720,
+      "sha256": "ea930e03419afb9cdea03876cb24d1a020f7e043d139da014ddc25a82483b32b",
+      "path": "raw/RC4_v1.2_Project_Instructions_250826.txt"
+    },
+    {
+      "index": 11,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.1_Curriculum_Execution_Manifest_250826.txt",
+      "bytes": 3359,
+      "sha256": "18b02ae2e8b60c452baea44951a8dc8cbf8419a5f6f9d98060d3fd192dd0cae9",
+      "path": "raw/RC4_v1.1_Curriculum_Execution_Manifest_250826.txt"
+    },
+    {
+      "index": 12,
+      "role": "historiallinen vertailulähde",
+      "filename": "EXPLORATION_Pixel_GrapheneOS_Alustus_ja_Salaus.txt",
+      "bytes": 13396,
+      "sha256": "71f72c7482c24fff6599149a940008aad2882f31ea20aeb61c7536b24dfcef32",
+      "path": "raw/EXPLORATION_Pixel_GrapheneOS_Alustus_ja_Salaus.txt"
+    },
+    {
+      "index": 13,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC3_v1.2_Portfolio_Continuity_Update_160826.txt",
+      "bytes": 6064,
+      "sha256": "73f36236b176dfcb4581ef45fddcf2a71fff6d1032178f8e26d74d8dfe0c5f32",
+      "path": "raw/RC3_v1.2_Portfolio_Continuity_Update_160826.txt"
+    },
+    {
+      "index": 14,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC1_v1.2_Master_Source_Baseline.txt",
+      "bytes": 33699,
+      "sha256": "39ce060f2c65d861c842b351d5332427dfec5588b560353b7daa45e5ed76904b",
+      "path": "raw/RC1_v1.2_Master_Source_Baseline.txt"
+    },
+    {
+      "index": 15,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.2_Master_Source_Lesson_Continuity_Update_250826.txt",
+      "bytes": 5809,
+      "sha256": "9aa9d38a1d97cabe1b943e308b42209bf71383ca3f64766f554a591720804619",
+      "path": "raw/RC4_v1.2_Master_Source_Lesson_Continuity_Update_250826.txt"
+    },
+    {
+      "index": 16,
+      "role": "historiallinen vertailulähde",
+      "filename": "RC4_v1.3_PROJECT_INSTRUCTIONS_v1.3_RC4.txt",
+      "bytes": 9515,
+      "sha256": "5799e244a13c70188ee33d241f7f677aebddf4a0b75802f558bf4cca17921450",
+      "path": "raw/RC4_v1.3_PROJECT_INSTRUCTIONS_v1.3_RC4.txt"
+    },
+    {
+      "index": 17,
+      "role": "lisäaineisto / QA",
+      "filename": "RC5_v1.2_Critical_Risk_and_Migration_QA_060926.txt",
+      "bytes": 8716,
+      "sha256": "fb39be5823c0f58deb9e1561a3a7b9e129e81f5b329c87858fdd272c574c0383",
+      "path": "raw/RC5_v1.2_Critical_Risk_and_Migration_QA_060926.txt"
+    },
+    {
+      "index": 18,
+      "role": "lisäaineisto / julkaisu",
+      "filename": "RC5_v1.0_Production_Release_Manifest_060926.txt",
+      "bytes": 1752,
+      "sha256": "0473127be45cbc2466e11e06c7be0040058d1ae7b8e80de338d4640a4224c3e0",
+      "path": "raw/RC5_v1.0_Production_Release_Manifest_060926.txt"
+    }
+  ]
+}

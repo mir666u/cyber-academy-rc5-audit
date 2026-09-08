@@ -1,0 +1,171 @@
+## Ydinjohtopäätös
+
+Aiemmassa työketjussa oli useita selviä virheitä ja liian vahvoja väitteitä. Vakavin virhe oli tavoitteiden sekoittaminen: ensin oletin, että sovellukset ja muokkaukset piti säilyttää, vaikka lopullinen tavoite oli poistaa kaikki käyttäjädata, säilyttää GrapheneOS ja asentaa tarvittavat sovellukset uudelleen.
+
+Oikea tekninen ratkaisu on:
+
+1. Poista kaikki eSIM-profiilit ja tee tehdasasetusten palautus.
+2. Jos käyttöjärjestelmän luotettavuudesta on pienikin perusteltu epäily, tehdasresetti ei riitä: asenna GrapheneOS uudelleen virallisella Web Installerilla ja lukitse bootloader.
+3. Päivitä järjestelmä ja GrapheneOS:n järjestelmäsovellukset.
+4. Varmenna juuri kyseinen puhelin Auditorilla.
+5. Asenna uudet eSIMit ja sovellukset vasta tämän jälkeen.
+6. Älä esitä prepaidia, eSIMiä, VPN:ää tai GrapheneOS:ää anonyymiyden takeena. Ne parantavat suojaa eri tavoin, mutta eivät estä operaattoria yhdistämästä puhelinta IMEI-tunnisteeseen, tukiasemiin ja liikkumiseen.
+
+## Kriittinen vastatarkastus
+
+| Aiempi väite tai toiminta | Ongelma | Korjattu arvio |
+|---|---|---|
+| Tehdasresettiä ehdotettiin, vaikka sovellusten oletettiin säilyvän | Tehdasresetti poistaa Signalin ja kaikki käyttäjän asentamat sovellukset, profiilit ja asetukset | Lopullisen tavoitteen mukaan tämä ei ollut vahinko, koska Signal voidaan asentaa uudelleen. Ensin olisi pitänyt lukita tavoite yksiselitteisesti |
+| “Kaikki data pois, GrapheneOS ja muokkaukset säilyvät” | Kaikki “muokkaukset” eivät kuulu käyttöjärjestelmään. Käyttäjäprofiilit, kuvakkeet, sovellukset ja niiden asetukset ovat käyttäjädataa | Tehdasresetti säilyttää GrapheneOS:n järjestelmäosioissa mutta poistaa käyttäjäkohtaisen rakenteen |
+| Tehdasresetti esitettiin täydellisenä puhdistuksena | Se tuhoaa käyttäjädatan salausavaimet, mikä on normaali ja vahva pyyhintä. Se ei kuitenkaan todista modeemin, eSIM-turvaelementin tai firmware-tason puhtautta | Jos epäillään vain vanhaa käyttäjädataa, resetti riittää. Jos epäillään järjestelmätason manipulointia, tarvitaan virallinen uudelleenasennus ja Auditor-varmennus |
+| Pixel 7:n Auditor-tulos sekoitettiin Pixel 8 Prohon | Yhden laitteen varmennus ei kerro mitään toisesta laitteesta | Jokainen laite auditoidaan erikseen mallin, boot-avaimen, version ja patch-tason perusteella |
+| Auditor-tuloksen väitettiin todistavan, ettei laitteessa ole “ylimääräisiä hallintaoikeuksia” tai muuta haitallista | Liian laaja päätelmä. Auditor todentaa laitteen identiteettiä, Verified Bootia, käyttöjärjestelmän eheyttä ja osan asetustilasta. Se ei ole kaikkien sovellusten, tilien, verkkotoiminnan tai basebandin haittaohjelmaskanneri | Hyväksytty Auditor-tulos on vahva todiste virallisesta, eheästä ja lukitusta käyttöjärjestelmästä — ei täydellinen todistus koko laitteen vaarattomuudesta [Auditorin toimintaperiaate](https://attestation.app/about) |
+| `HEADSET connected` tulkittiin aluksi fyysiseksi kuulokeyhteydeksi | Lokiriviä tulkittiin liian spesifisesti ilman lähdekoodikontekstia | Myöhempi korjaus oli oikea: kyseinen rivi voi kuvata Telecom-prosessin liittymistä Bluetooth Headset -profiilipalveluun eikä ulkoista laitetta |
+| Radioalustuksesta pääteltiin mahdollinen modeemin uudelleenkäynnistys | Lokikatkelma ei yksin riitä syyn tai edes täydellisen modem resetin varmistamiseen | Varmistettavissa oli verkkotilan ja radiotekniikan muutos. Syy jäi avoimeksi |
+| Uusi eSIM esitettiin historiattomana | eSIM ei sisällä vanhan puhelimen viestejä tai tiedostoja, mutta liittymän hankinta ja käyttö tuottavat uutta historiaa | Maksu, sähköposti, tilaus-IP, laitteen IMEI, tukiasemat ja aktivointiajankohta voivat muodostaa yhdistettävän ketjun |
+| Elisa Prepaidin voimassaolo esitettiin 12 kuukaudeksi heti | Tämä oli väärin tai ainakin olennaisesti puutteellisesti ilmaistu | Elisan nykyisen ohjeen mukaan liittymä on ennen ensimmäistä erillistä latausta voimassa **3 kuukautta aktivoinnista**. Jokainen lataus jatkaa voimassaoloa 12 kuukautta. Aloituspaketin mukana tuleva saldo ei välttämättä ole sama asia kuin myöhempi lataus, joten 12 kuukauden jatko on tarkistettava liittymästä latauksen jälkeen. [Elisan prepaid-ohje](https://elisa.fi/asiakaspalvelu/puheliittymat/prepaid/) |
+| Elisa Prepaid esitettiin käytännössä anonyymina | Liian vahva väite. Vaikka liittymää ei muodollisesti rekisteröitäisi henkilötunnukselle, sähköinen ostaminen ja käyttäminen synnyttävät tunnisteita | “Rekisteröimätön” ei tarkoita anonyymia |
+| Saily esitettiin ensin vain dataliittymänä | Vuoden 2026 palvelu on muuttunut | Saily tarjoaa nykyään erillisen +1-numeron, mutta se vaatii henkilöllisyyden tarkistamisen ja on tili-/tilaussidonnainen. Se ei ole hyvä ratkaisu, jos tavoite on identiteettisidoksen minimointi. [Saily-numero](https://saily.com/esim-phone-number/) |
+| Hotspotin käyttö kuvattiin historiattomaksi | Se ei siirrä iPhonen sisältöä, mutta yhdistämisestä voi jäädä Pixeliin verkon nimi ja iPhoneen/hotspot-laitteeseen yhteystieto | Verkko pitää unohtaa, mutta se ei poista operaattorin näkemää samanaikaista liikenne- ja sijaintikorrelaatiota |
+| “Uusi Signal ei tuo historiaa” | Paikallinen historia ei palaudu ilman varmuuskopiota, mutta uusi tili ei automaattisesti takaa anonymiteettiä | Yhteystietojen synkronointi, vastaanottajat, sama IP, käyttöpaikat ja viestintäkuvio voivat yhdistää uuden identiteetin vanhaan |
+
+## Mitä vahvempi asiantuntija kysyisi ensin?
+
+1. Ketä vastaan suojaudutaan: satunnaista löytämistä, vastaanottajaa, rikollista, operaattoria, palveluntarjoajaa vai viranomaistason toimijaa?
+2. Luovutetaanko puhelimet samalle henkilölle, eri henkilöille vai jäävätkö ne omaan erilliseen käyttöön?
+3. Pitääkö uuden käyttäjän pystyä hallitsemaan liittymää itsenäisesti ilman sinun sähköpostiasi, maksutapaasi tai tiliäsi?
+4. Epäilläänkö ainoastaan vanhaa käyttäjädataa vai myös käyttöjärjestelmän, firmware-tason tai fyysisen laitteen manipulointia?
+5. Kumpi on tärkeämpi: käyttövalmiiksi rakennettu paketti vai mahdollisimman pieni tekninen ja henkilöllinen yhteys valmistelijan ja uuden käyttäjän välillä?
+
+Näillä kysymyksillä on ratkaiseva vaikutus. Tässä tapauksessa käyttäjän ilmoittaman tavoitteen perusteella paras perusratkaisu on täydellinen pyyhintä, GrapheneOS:n varmennus ja uusi käyttöönotto. Todellista anonyymiyttä ei kuitenkaan pidä luvata.
+
+# Kymmenen tehokkainta lisäparannusta
+
+## 1. Rakenna puhelimille erilliset identiteetit alusta asti
+
+Kummallekin puhelimelle oma:
+
+- puhelinnumero
+- sähköpostiosoite
+- Signal-tili
+- maksupolku mahdollisuuksien mukaan
+- käyttötarkoitus ja yhteyshenkilöjoukko.
+
+Älä käytä samoja sähköposteja, käyttäjänimiä, profiilikuvia, palautusosoitteita tai yhteystietoluetteloita kuin vanhoissa laitteissa. Muuten palvelut voivat yhdistää identiteetit, vaikka laite olisi teknisesti puhdas.
+
+## 2. Tee puhdistus oikealla varmuustasolla
+
+Jos tavoitteena on varmasti poistaa käyttäjädata:
+
+- poista vanhat eSIMit
+- valitse tehdasresetissä eSIMien poistaminen
+- tee tehdasasetusten palautus
+- älä palauta SeedVault-, Google-, Signal- tai muuta varmuuskopiota.
+
+Jos järjestelmän manipulointia epäillään, asenna GrapheneOS uudelleen virallisella asennustyökalulla. Resetointi ei korvaa uudelleenasennusta tällaisessa uhkamallissa.
+
+## 3. Varmenna kumpikin laite erikseen
+
+Tarkista jokaisesta puhelimesta:
+
+- oikea laitemalli
+- virallinen muokkaamaton GrapheneOS
+- lukittu bootloader
+- OEM unlocking pois
+- ajantasainen tietoturvataso
+- yksi odotettu käyttäjä/profiili
+- ADB pois
+- USB-C oletuksena vain lataukseen.
+
+Auditor kannattaa parittaa erilliseen luotettuun Android-laitteeseen ja uusia tarkistus säännöllisesti. Se tunnistaa myös myöhempiä käyttöjärjestelmän tai patch-tason taaksepäin siirtymisiä.
+
+## 4. Käytä vahvaa lukitusta ja GrapheneOS:n pakkopyyhintää harkiten
+
+- Vähintään 8–10 satunnaista PIN-numeroa; vahva salasana on parempi, jos käyttömukavuus sallii.
+- Lyhyt näytön automaattilukitus.
+- Automaattinen uudelleenkäynnistys esimerkiksi 4–8 tuntiin. Uudelleenkäynnistys palauttaa laitteen BFU-tilaan, jossa käyttäjädatan avaimet eivät ole käytettävissä.
+- Duress PIN/password vain, jos vastaanottaja ymmärtää sen peruuttamattomuuden: se pyyhkii käyttäjädatan ja myös eSIMit, eikä toimintoa voi keskeyttää. [GrapheneOS:n suojausominaisuudet](https://grapheneos.org/features)
+
+Älä aseta biometriaa valmiiksi toiselle käyttäjälle.
+
+## 5. Eristä sovellukset tarkoituksen mukaan
+
+Suositeltu rakenne:
+
+- Owner: järjestelmän hallinta, mahdollisimman vähän päivittäisiä sovelluksia
+- viestintäprofiili: Signal
+- tarvittaessa erillinen profiili Google Playta vaativille sovelluksille
+- korkean riskin tai kertakäyttöiset sovellukset erilliseen profiiliin.
+
+Profiilit vähentävät sovellusten välistä tietojen yhdistelyä, mutta eivät tee samassa laitteessa käytetyistä identiteeteistä automaattisesti anonyymeja.
+
+## 6. Käytä GrapheneOS:n lupia oletusarvoisesti kieltävinä
+
+Tarkista jokaiselle sovellukselle:
+
+- Network: pois, ellei sovellus tarvitse verkkoa
+- Sensors: pois
+- Contacts: käytä Contact Scopesia
+- Files: käytä Storage Scopesia
+- sijainti: vain käytön aikana tai ei koskaan
+- mikrofoni ja kamera: vain tarvittaessa
+- Nearby devices: pois
+- taustatoiminta: rajoitettu, ellei ilmoitusten toiminta sitä vaadi.
+
+GrapheneOS:n Network-, Sensors-, Storage Scopes- ja Contact Scopes -ominaisuudet on suunniteltu juuri tähän. [GrapheneOS:n ominaisuudet](https://grapheneos.org/features)
+
+## 7. Koveta matkapuhelinradio, Wi‑Fi ja Bluetooth
+
+- Poista 2G käytöstä.
+- Jos operaattorin VoLTE toimii varmasti, harkitse LTE-only-tilaa. Se pienentää radioverkkopinon hyökkäyspintaa, mutta voi heikentää kattavuutta.
+- Bluetooth ja NFC pois, kun niitä ei käytetä.
+- Wi‑Fi- ja Bluetooth-skannaus sijaintipalveluista pois.
+- Käytä Wi‑Fin per-connection MAC randomizationia, joka on GrapheneOS:ssa oletuksena.
+- Älä tallenna tarpeettomia verkkoja.
+
+GrapheneOS korostaa, ettei LTE-only salaa tavallisia puheluja tai SMS-viestejä; siihen tarvitaan päästä päähän salattu palvelu. [GrapheneOS:n käyttöohje](https://grapheneos.org/usage)
+
+## 8. Käytä VPN:ää vuotosuojauksella — mutta älä sekoita sitä anonymiteettiin
+
+Jos VPN otetaan käyttöön:
+
+- käytä GrapheneOS:n erikseen testaamaa Mullvad-sovellusta tai muuta luotettavasti auditoitua toteutusta
+- valitse Always-on VPN
+- kytke Block connections without VPN
+- käytä VPN-palvelun omaa DNS:ää, jotta erillinen DNS-valinta ei tee liikenteestä poikkeavaa tai aiheuta vuotoja.
+
+VPN piilottaa kohde-IP:t operaattorilta mutta siirtää luottamusta VPN-palvelulle. Se ei piilota operaattorilta IMEI:tä, SIM-tunnistetta, tukiasemaa tai sitä, milloin puhelin on verkossa. [GrapheneOS:n VPN- ja DNS-ohje](https://grapheneos.org/faq)
+
+## 9. Estä identiteettien korrelaatio käyttötavoilla
+
+Teknisesti puhdaskin puhelin yhdistyy vanhaan identiteettiin nopeasti, jos:
+
+- se aktivoidaan samassa paikassa ja samaan aikaan vanhan puhelimen kanssa
+- sillä otetaan yhteyttä heti samaan pieneen ihmisjoukkoon
+- sillä käytetään samoja verkkotilejä
+- se yhdistetään samaan koti-Wi‑Fiin
+- sen numero tai sähköposti annetaan samoihin palveluihin.
+
+Tämä on koko suunnitelman tärkein anonyymiyteen vaikuttava kohta. GrapheneOS suojaa laitetta ja sovellusdataa, mutta ei voi poistaa käyttäytymiseen, matkapuhelinverkkoon tai sosiaaliseen verkostoon perustuvaa tunnistamista.
+
+## 10. Tee luovutus niin, ettei valmistelija jää pysyväksi osapuoleksi
+
+Paras tietosuojaratkaisu olisi, että vastaanottaja aktivoi oman liittymänsä ja luo omat tunnuksensa. Jos eSIM ja Signal on pakko asentaa valmiiksi:
+
+- käytä liittymäkohtaista uutta sähköpostia
+- luovuta sähköpostin salasana, palautuskoodi, QR-koodi, PIN ja PUK
+- vaihda kaikki tunnukset vastaanottajan hallintaan
+- älä säilytä QR-koodeja, salasanoja tai Signal-PINiä omissa laitteissasi
+- älä yhdistä vastaanottajan biometriaa tai henkilökohtaisia tilejä itse
+- dokumentoi, milloin puhelin päivitettiin, auditoitiin ja luovutettiin.
+
+## Korjattu operaattorisuositus
+
+Elisa Prepaid eSIM on edelleen Sailyä käytännöllisempi pääliittymä, jos puhelimessa tarvitaan suomalainen numero, tavalliset puhelut, SMS ja Signal-vahvistus ilman Saily-tiliä ja henkilöllisyyden tarkistamista.
+
+Mutta kaksi rajausta ovat ehdottomia:
+
+- Elisa Prepaid ei tee puhelimesta anonyymia.
+- Liittymän voimassaolo on ensin **3 kuukautta aktivoinnista**; vasta erillinen lataus pidentää voimassaolon 12 kuukauteen. Tarkista uusi päättymispäivä latauksen jälkeen tekstiviestillä `TILI` numeroon `18258`. [Elisan virallinen ohje](https://elisa.fi/asiakaspalvelu/puheliittymat/prepaid/)
+
+Ratkaiseva parannus koko suunnitelmaan on siis tämä: älä rakenna vain “turvallista puhelinta”, vaan suunnittele erikseen laitteen eheys, datan suojaus, liittymän omistajuus ja identiteettien korrelaation estäminen. Ne ovat neljä eri ongelmaa, eikä yksikään yksittäinen sovellus, VPN, eSIM tai käyttöjärjestelmä ratkaise niitä kaikkia.

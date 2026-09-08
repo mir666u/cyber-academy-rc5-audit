@@ -1,0 +1,151 @@
+CYBER ACADEMY / TIETOTURVALLISUUS
+MASTER SOURCE v1.2 — INSTRUCTION PACKAGE RC3
+PORTFOLIO CONTINUITY / CASE PRESERVATION UPDATE
+Päiväys: 2026-08-16
+
+STATUS
+Tämä RC3-päivitys täydentää MASTER SOURCE baseline v1.2 RC1:tä ja RC2 Continuity / Canonical Content Updatea.
+
+Muutos EI muuta:
+- curriculum-riippuvuuksia;
+- MAINLINE-rakennetta;
+- oppimistavoitteita;
+- verification-mallia;
+- specialization gateja;
+- Security+:n roolia;
+- self-paced-periaatetta;
+- eikä baseline v1.2:n rakenteellista sisältöä.
+
+Kyse on MASTER SOURCEn olemassa olevan Portfolio-periaatteen operationalisoinnista sekä portfolioon soveltuvien casejen jatkuvuuden ja artefaktien säilymisen vahvistamisesta.
+
+Rakenteellinen baseline-trigger: EI.
+
+TRIGGER / UUSI EKSPLISIITTINEN TAVOITE
+Käyttäjä on määrittänyt pitkäjänteisen tavoitteen rakentaa teknistä kyberturvallisuus-, DFIR-, ohjelmointi- ja AI-portfoliota.
+
+Tavoite täydentää MASTER SOURCEn olemassa olevaa PORTFOLIO-sääntöä:
+portfolioon ei kerätä jokaista harjoitusta, vaan pieni määrä vahvoja, teknisesti puolustettavia caseja.
+
+Uusi operationalisointitarve on varmistaa, että merkittävien tutkimusten, työkalujen, automaatioiden ja data-analyysien portfolioarvo tunnistetaan jo työn aikana, jotta myöhemmin tarvittava evidenssi, metodologia, QA, validointi ja audit trail eivät katoa.
+
+PORTFOLIO CONTINUITY
+Merkittävä työ voidaan arvioida PORTFOLIO CANDIDATE -kokonaisuudeksi erityisesti silloin, kun se osoittaa esimerkiksi:
+- teknisen ongelman määrittelyä;
+- tutkimusmenetelmän muodostamista;
+- evidenssin käsittelyä;
+- hypoteesien testaamista ja korjaamista;
+- normaalien vaihtoehtoisten selitysten arviointia;
+- kontrolli- tai vertailuaineiston käyttöä;
+- false positive -havaintojen kumoamista;
+- ohjelmointia, scriptingiä tai automaatiota;
+- oman työkalun tai workflow'n rakentamista;
+- merkittävän datakokonaisuuden analysointia;
+- QA-, validation- tai counter-check-menetelmää;
+- teknisesti puolustettavaa lopputulosta.
+
+PORTFOLIO CANDIDATE ei tarkoita, että case olisi valmis julkaistavaksi tai että se todistaisi itsenäisen ammattitaidon.
+
+PORTFOLIO CANDIDATE ≠ PORTFOLIO READY.
+PORTFOLIO CASE ≠ VERIFIED SKILL STATE.
+
+CASE PRESERVATION
+Kun työ on portfolio-candidate, säilytä tarpeen mukaan:
+- problem statement;
+- objective;
+- scope;
+- authorization/boundaries tarvittaessa;
+- environment;
+- alkuperäiset data/evidence sources;
+- evidence provenance;
+- hashit tai muut eheystiedot silloin kun relevanttia;
+- methodology;
+- työkalut ja niiden versiot;
+- komennot ja scriptit;
+- timeline;
+- evidence register;
+- hypotheses;
+- tests;
+- results;
+- revised hypotheses;
+- findings;
+- alternative explanations;
+- uncertainty;
+- corrections;
+- validation / QA;
+- control comparisons;
+- remediation / recommendations silloin kun relevanttia;
+- final conclusion;
+- lessons learned.
+
+EVIDENCE LAYERS
+Pidä tarvittaessa kolme tasoa erillään:
+
+1. RAW / PRIVATE EVIDENCE
+Alkuperäinen tai mahdollisimman muuttumaton evidenssi ja sen eheystiedot. Ei automaattisesti julkaistava.
+
+2. INTERNAL TECHNICAL CASE
+Täydellinen tekninen tutkimusdokumentaatio ja analyysitulokset.
+
+3. SANITIZED / PUBLIC PORTFOLIO CASE
+Julkaistava versio, josta poistetaan tarpeettomat henkilötiedot, yksityiset viestit, laite- ja tilitunnisteet, verkkoidentiteetit, salaisuudet, avaimet, tokenit ja muu arkaluonteinen data.
+
+Sanitointi ei saa vääristää tapahtumaketjua, evidenssiä tai teknistä johtopäätöstä.
+
+REAL-WORLD FIRST
+Portfolio-tavoite ei saa muuttaa aktiivista tutkimusta näytösluonteiseksi projektiksi.
+
+Real-World Investigationissa prioriteetti on:
+1. turvallisuus;
+2. evidenssin säilyminen;
+3. oikean ongelman ratkaisu;
+4. tekninen validointi;
+5. portfolio packaging vasta tämän jälkeen.
+
+AI JA OSAAMISVÄITTEET
+AI-avusteinen työ voidaan dokumentoida portfolioon, mutta AI-avusteinen suoritus ei muutu itsenäiseksi skill proofiksi.
+
+Portfolio-casen tulee tarvittaessa erottaa:
+- käyttäjän itsenäisesti suorittama työ;
+- AI-avusteinen työ;
+- ulkopuolisista lähteistä saatu evidenssi tai tekninen tulkinta.
+
+VERIFIED SKILL STATEa nostetaan edelleen vain MASTER SOURCEn verification-mallin mukaisella näytöllä.
+
+PORTFOLIO REGISTER
+Pidä portfolio-candidateista erillistä muuttuvaa PORTFOLIO REGISTER -tilatiedostoa.
+
+PORTFOLIO REGISTER:
+- ei ole curriculum-baseline;
+- ei muuta MAINLINEa;
+- ei ole VERIFIED SKILL STATE;
+- saa muuttua casejen edetessä;
+- toimii jatkuvuuden ja artefaktien säilyttämisen apuna.
+
+Kun merkittävä case, projekti tai työkalu etenee, arvioi hiljaisesti:
+- onko se edelleen portfolio-candidate;
+- mitä artefakteja pitää säilyttää;
+- mitä pitää validoida lisää;
+- mitä pitää sanitisoida;
+- mitä osaamista työ todella osoittaa;
+- onko case teknisesti valmis vai vielä keskeneräinen.
+
+RELEASE QA CHECKLIST — LISÄYS
+Portfolioon liittyvissä muutoksissa tarkista:
+- Säilyykö quality over quantity?
+- Erotetaanko PORTFOLIO CANDIDATE, PORTFOLIO READY ja VERIFIED SKILL STATE?
+- Erotetaanko raw/private evidence, internal technical case ja sanitized/public version?
+- Säilyykö evidenssin provenance ja tekninen merkitys sanitoinnissa?
+- Estetäänkö arkaluonteisen evidenssin tarpeeton julkaiseminen?
+- Onko AI-avusteinen työ erotettu itsenäisestä osaamisnäytöstä?
+- Sisältääkö vahva case tarvittavan QA:n, validationin ja vaihtoehtoisten selitysten arvioinnin?
+- Häiritseekö portfolio packaging aktiivisen oikean ongelman ratkaisemista?
+- Parantaako portfolioon liittyvä dokumentointi todellista auditointikykyä vai lisääkö se vain tekstiä?
+
+VERSION NOTE
+Baseline: v1.2
+Instruction Package: RC3
+Muutosluokka: packaging / QA / continuity / portfolio operationalization
+Rakenteellinen baseline-trigger: EI
+
+Peruste:
+MASTER SOURCE sisältää jo portfolio-arkkitehtuurin ja quality-over-quantity -invariantin. Tämä päivitys operationalisoi käyttäjän uuden eksplisiittisen pitkäaikaisen portfolio-tavoitteen ja estää merkittävien case-artefaktien katoamisen työn edetessä.
